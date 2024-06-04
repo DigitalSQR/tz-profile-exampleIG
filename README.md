@@ -4,6 +4,8 @@ To create a blank IG using the ig publisher docker image you can run these comma
 
 ```
 docker run -it --entrypoint su -v $(pwd):/home/publisher/ig hl7fhir/ig-publisher-base:latest publisher -s /bin/bash
+```
+```
 npm install -g fsh-sushi
 sushi init
 ```
@@ -15,5 +17,12 @@ Then you'll exit that docker instance to change to the newly created IG director
 exit
 cd ExampleIG
 docker run -it --entrypoint su -v $(pwd):/home/publisher/ig hl7fhir/ig-publisher-base:latest publisher -s /bin/bash
+```
+```
 ./_updatePublisher.sh
+```
+
+If on windows, use this command for docker instead:
+```
+docker run -it --entrypoint su -v %cd%:/home/publisher/ig hl7fhir/ig-publisher-base:latest publisher -s /bin/bash
 ```
