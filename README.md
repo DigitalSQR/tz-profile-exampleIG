@@ -1,8 +1,15 @@
 ## Example FHIR IG
 
+
 ### To build this repo using the IG Publisher docker, from the checked out repo run:
 ```
 docker run -it --entrypoint su -v $(pwd):/home/publisher/ig hl7fhir/ig-publisher-base:latest publisher -s /bin/bash
+```
+
+Once docker has started up, you can build the IG with this command:
+
+```
+./_genonce.sh
 ```
 
 ### How this was created
