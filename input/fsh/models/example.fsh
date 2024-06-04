@@ -9,6 +9,7 @@ Description:  "TZ FHIR Training example logical model."
 * gender from TZGender
 * tribe 0..1 code "Tribe" "Patient's tribe."
 * tribe from TZTribeVS
+* mothersMaidenName 0..1 string "Mother's Maiden Name" "The Patient's Mother's maiden name."
 * address 0..1 string "Address" "Patient's Address."
 * identification 0..1 string "Identification" "Patient's identification number."
 * weight 1..1 positiveInt "Weight" "Patient's weight in kg."
@@ -28,6 +29,8 @@ Target:   "Patient"
 * address -> "Patient.address.text"
 * identification -> "Patient.identifier.value"
 * tribe -> "Patient.extension.valueCode"
+* mothersMaidenName -> "Patient.extension.valueString"
+
 
 Mapping: ExampleToWeight
 Source: Example
