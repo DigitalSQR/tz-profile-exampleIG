@@ -12,7 +12,7 @@
    <version value="0.1.0"/>
    <name value="ExampleIG"/>
    <status value="draft"/>
-   <date value="2024-06-04T11:43:57+00:00"/>
+   <date value="2024-06-04T13:08:19+00:00"/>
    <publisher value="Example Publisher"/>
    <contact>
       <name value="Example Publisher"/>
@@ -266,12 +266,18 @@
          <description value="These define constraints on FHIR resources for systems conforming to this implementation guide."/>
       </grouping>
       
-      
+      <grouping id="-str-extension">
+         <name value="Structures: Extension Definitions"/>
+         <description value="These define constraints on FHIR data types for systems conforming to this implementation guide."/>
+      </grouping>
       <grouping id="-term-valueset">
          <name value="Terminology: Value Sets"/>
          <description value="These define sets of codes used by systems conforming to this implementation guide."/>
       </grouping>
-      
+      <grouping id="-term-codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming to this implementation guide."/>
+      </grouping>
       
       
       
@@ -282,6 +288,9 @@
          <name value="Example: Example Instances"/>
          <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like."/>
       </grouping>
+      
+      
+      
       
       
       
@@ -430,6 +439,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tribe.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tribe"/>
+         </reference>
+         <name value="Tribe Extension"/>
+         <description value="Tribe Extension"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -442,6 +469,42 @@
          <description value="Gender valueset for Tanzania"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-tz-tribe.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/tz-tribe"/>
+         </reference>
+         <name value="TZ Tribe"/>
+         <description value="Tribe valueset for Tanzania"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-tz-tribe.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/tz-tribe"/>
+         </reference>
+         <name value="TZ Tribes"/>
+         <description value="TZ Tribes"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -560,8 +623,23 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-tribe.html"/>
+               <title value="Tribe Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-tz-gender.html"/>
                <title value="TZ Gender"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-tz-tribe.html"/>
+               <title value="TZ Tribe"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-tz-tribe.html"/>
+               <title value="TZ Tribes"/>
                <generation value="generated"/>
             </page>
             <page>

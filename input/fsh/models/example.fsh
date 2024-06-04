@@ -7,6 +7,8 @@ Description:  "TZ FHIR Training example logical model."
 * dob 1..1 date "Date of Birth" "Patient's date of birth."
 * gender 0..1 code "Gender" "Patient's gender."
 * gender from TZGender
+* tribe 0..1 code "Tribe" "Patient's tribe."
+* tribe from TZTribeVS
 * address 0..1 string "Address" "Patient's Address."
 * identification 0..1 string "Identification" "Patient's identification number."
 * weight 1..1 positiveInt "Weight" "Patient's weight in kg."
@@ -25,6 +27,7 @@ Target:   "Patient"
 * gender -> "Patient.gender"
 * address -> "Patient.address.text"
 * identification -> "Patient.identifier.value"
+* tribe -> "Patient.extension.valueCode"
 
 Mapping: ExampleToWeight
 Source: Example
