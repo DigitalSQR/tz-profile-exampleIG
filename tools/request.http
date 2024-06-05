@@ -78,3 +78,28 @@ Content-Type: application/fhir+json
 ### validate new patient
 GET {{host}}/Patient/161/$validate?profile=http://example.org/StructureDefinition/TZPatient
 
+
+### validate new patient before submitting
+POST {{host}}/Patient/$validate
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/TZPatient"
+    ]
+  },
+  "id": "alkjasfkjasd",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
+  },
+  "name": [
+    {
+      "given": [ "Luke" ],
+      "family": "Duncan"
+    }
+  ]
+}
+
