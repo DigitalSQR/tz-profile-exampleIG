@@ -12,3 +12,5 @@ Content-Type: application/fhir+json
 
 < ../input/resources/random-data-bundle2.json
 
+### Get list of all patients
+GET {{host}}/Patient HTTP/1.1
