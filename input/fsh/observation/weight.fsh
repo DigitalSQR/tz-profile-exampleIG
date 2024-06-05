@@ -30,3 +30,4 @@ Usage: #example
 * subject = Reference(PatientExample)
 * code = $LNC#29463-7
 * valueQuantity = 20.2 $UCUM#kg "kilograms"
+* effectiveDateTime = 2024-06-05T10:00:00Z

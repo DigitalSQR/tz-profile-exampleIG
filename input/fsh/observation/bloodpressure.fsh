@@ -20,7 +20,7 @@ Description: "An example profile of the Observation resource for blood pressure.
     * unit 1..1
     * unit = "mmHg"
     * code 1..1
-    * code = #mmHg
+    * code = #mm[Hg]
     * value 1..1
 * component[diastolic]
   * code = $LNC#8462-4
@@ -31,7 +31,7 @@ Description: "An example profile of the Observation resource for blood pressure.
     * unit 1..1
     * unit = "mmHg"
     * code 1..1
-    * code = #mmHg
+    * code = #mm[Hg]
     * value 1..1
 
 Instance: BPExample
@@ -44,7 +44,8 @@ Usage: #example
 * code = $LNC#55284-4
 * component[systolic]
   * code = $LNC#8480-6
-  * valueQuantity = 80 $UCUM#mmHg "mmHg"
+  * valueQuantity = 80 $UCUM#mm[Hg] "mmHg"
 * component[diastolic]
   * code = $LNC#8462-4
-  * valueQuantity = 170 $UCUM#mmHg "mmHg"
+  * valueQuantity = 170 $UCUM#mm[Hg] "mmHg"
+* effectiveDateTime = 2024-06-05T10:00:00Z

@@ -15,6 +15,13 @@ Content-Type: application/fhir+json
 ### Get list of all patients
 GET {{host}}/Patient?_total=accurate&tribe=sukuma HTTP/1.1
 
+
+### Get list of observations of weight over 90 kgs
+GET {{host}}/Observation?_total=accurate&code=29463-7&value-quantity=gt90&_include=Observation:subject HTTP/1.1
+
+### get patients born in or after 2000
+GET {{host}}/Patient?birthdate=gt2001-04-16&birthdate=lt2003-12-31
+
 ### Get list of weight observations
 GET {{host}}/Observation?_total=accurate&code=http://loinc.org|29463-7 HTTP/1.1
 
@@ -123,3 +130,14 @@ Content-Type: application/fhir+json
   "type": "token"
 }
 
+### delete tribe search parameter
+DELETE {{host}}/SearchParameter/TZTribeSearch HTTP/1.1
+
+### Send test IPS to server
+PUT {{host}}/Composition/TZTestIPS
+Content-Type: application/fhir+json
+
+< ../fsh-generated/resources/Composition-TZTestIPS.json
+
+### Generate the document
+GET {{host}}/Composition/TZTestIPS/$document

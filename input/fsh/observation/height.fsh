@@ -24,3 +24,4 @@ Usage: #example
 * subject = Reference(PatientExample)
 * code = $LNC#8302-2
 * valueQuantity = 200 $UCUM#cm "centimeters"
+* effectiveDateTime = 2024-06-05T10:00:00Z
