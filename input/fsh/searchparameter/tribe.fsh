@@ -1,8 +1,10 @@
 Instance: TZTribeSearch
 InstanceOf: SearchParameter
 Title: "Search on the defined extension for tribe"
+Description: "Search parameter for the tribe extension."
 Usage: #definition
 
+* name = "TZTribe"
 * status = #active
 * code = #tribe
 * base[+] = #Patient
