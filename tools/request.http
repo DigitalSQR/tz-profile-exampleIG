@@ -13,4 +13,68 @@ Content-Type: application/fhir+json
 < ../input/resources/random-data-bundle2.json
 
 ### Get list of all patients
-GET {{host}}/Patient HTTP/1.1
+GET {{host}}/Patient?given=Si HTTP/1.1
+
+### Get list of weight observations
+GET {{host}}/Observation?code=http://loinc.org|29463-7 HTTP/1.1
+
+### Update an observation
+PUT {{host}}/Observation/a513ae4a-3114-4d3e-885d-28599b3e4657
+Content-Type: application/fhir+json
+
+{
+        "resourceType": "Observation",
+        "id": "a513ae4a-3114-4d3e-885d-28599b3e4657",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "amended",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/970b5692-348b-4645-a040-ca5cfb3fff06"
+        },
+        "valueQuantity": {
+          "value": 80.6,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+
+### get a version of an observation
+GET {{host}}/Observation/a513ae4a-3114-4d3e-885d-28599b3e4657/_history
+
+### create a patient
+POST {{host}}/Patient
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "Patient",
+  "id": "alkjasfkjasd",
+  "name": [
+    {
+      "given": [ "Luke" ],
+      "family": "Duncan"
+    }
+  ]
+}
+
+
+### upload TZ patient profile
+PUT {{host}}/StructureDefinition/TZPatient
+Content-Type: application/fhir+json
+
+< ../output/StructureDefinition-TZPatient.json
+
+### validate new patient
+GET {{host}}/Patient/161/$validate?profile=http://example.org/StructureDefinition/TZPatient
+
