@@ -8,5 +8,5 @@ Usage: #definition
 * status = #active
 * code = #tribe
 * base[+] = #Patient
-* expression = "(extension('http://example.org/StructureDefinition/tribe').value.ofType(code))"
+* expression = "extension.where(url='http://example.org/StructureDefinition/tribe').value.ofType(code)"
 * type = #token

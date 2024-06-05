@@ -13,10 +13,10 @@ Content-Type: application/fhir+json
 < ../input/resources/random-data-bundle2.json
 
 ### Get list of all patients
-GET {{host}}/Patient?given=Si HTTP/1.1
+GET {{host}}/Patient?_total=accurate&tribe=sukuma HTTP/1.1
 
 ### Get list of weight observations
-GET {{host}}/Observation?code=http://loinc.org|29463-7 HTTP/1.1
+GET {{host}}/Observation?_total=accurate&code=http://loinc.org|29463-7 HTTP/1.1
 
 ### Update an observation
 PUT {{host}}/Observation/a513ae4a-3114-4d3e-885d-28599b3e4657
@@ -102,5 +102,24 @@ Content-Type: application/fhir+json
     }
   ],
   "birthDate": "2000-01-01"
+}
+
+### Save tribe search parameter
+PUT {{host}}/SearchParameter/TZTribeSearch HTTP/1.1
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "SearchParameter",
+  "id": "TZTribeSearch",
+  "url": "http://example.org/SearchParameter/TZTribeSearch",
+  "description": "Search parameter for the tribe extension.",
+  "base": [
+    "Patient"
+  ],
+  "name": "TZTribe",
+  "status": "active",
+  "code": "tribe",
+  "expression": "extension.where(url='http://example.org/StructureDefinition/tribe').value.ofType(code)",
+  "type": "token"
 }
 

@@ -1,7 +1,13 @@
+Invariant: tz-weight-valid
+Description: "Make sure the weight is valid for humans"
+Severity:    #error
+Expression:  "value.ofType(Quantity).value > 0.1 and value.ofType(Quantity).value < 200"
+
 Profile: TZWeight
 Parent: Observation
 Description: "An example profile of the Observation resource for weight in kg."
 
+* obeys tz-weight-valid
 * subject 1..1 
 * subject only Reference(TZPatient)
 * code = $LNC#29463-7
