@@ -16,12 +16,7 @@ group TZHeightToUSHeight(
   
   src.code as code -> tgt.code as tcode then {
     code.coding as coding -> tcode.coding = translate( coding, 'http://example.org/ConceptMap/HeightLoincToSnomed', 'Coding' ) "setCoding";
-    /*
-    code.coding as coding -> tcode.coding as tcoding then {
-      coding.code as lnc -> tcoding.code = translate( lnc, 'http://example.org/ConceptMap/HeightLoincToSnomed', 'code' ) "setSCTCode";
-      coding.system -> tcoding.system = 'http://snomed.info/sct' "setSystem";
-    } "setCoding";
-    */
+
   } "setCode";
 
   src.effective as effective -> tgt.effective = effective "setEffective";
