@@ -1,0 +1,38 @@
+map "http://example.org/StructureMap/TZHeightToUSHeight" = "TZHeightToUSHeight"
+
+uses "http://example.org/StructureDefinition/TZHeight" alias Height as source
+uses "http://hl7.org/fhir/StructureDefinition/Observation" alias Observation as target
+
+group TZHeightToUSHeight(
+  source src : Height,
+  target tgt : Observation
+) {
+
+  src.subject as subject -> tgt.subject = subject "setSubject";
+
+  src.status as status -> tgt.status = status "setStatus";
+
+  //src.code as code -> tgt.code = translate( code, 'http://example.org/ConceptMap/HeightLoincToSnomed', 'CodeableConcept' ) "translateCode";
+  
+  src.code as code -> tgt.code as tcode then {
+    code.coding as coding -> tcode.coding = translate( coding, 'http://example.org/ConceptMap/HeightLoincToSnomed', 'Coding' ) "setCoding";
+    /*
+    code.coding as coding -> tcode.coding as tcoding then {
+      coding.code as lnc -> tcoding.code = translate( lnc, 'http://example.org/ConceptMap/HeightLoincToSnomed', 'code' ) "setSCTCode";
+      coding.system -> tcoding.system = 'http://snomed.info/sct' "setSystem";
+    } "setCoding";
+    */
+  } "setCode";
+
+  src.effective as effective -> tgt.effective = effective "setEffective";
+
+  src.value : Quantity as value -> tgt.value = create("Quantity") as tgtvalue then {
+
+    value.value as cm -> tgtvalue.value = (cm * 0.393701) "convertToInches";
+    value.code -> tgtvalue.code = "[in_i]" "setCodeToInches";
+    value.unit -> tgtvalue.unit = "in_i" "setUnitToInches";
+    value.system as system -> tgtvalue.system = system "setSystem";
+
+  } "setQuantity";
+
+}

@@ -1,0 +1,19 @@
+map "http://example.org/StructureMap/TZHBundleToUSHBundle" = "TZHBundleToUSHBundle"
+
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias TZBundle as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias USBundle as target
+
+imports "http://example.org/StructureMap/TZHeightToUSHeight"
+
+group TZHBundleToUSHBundle(
+  source src : TZBundle,
+  target tgt : USBundle
+) {
+
+  src -> tgt.type = "collection" "setBundleType";
+
+  src.entry as entry -> tgt.entry as tentry then {
+    entry.resource : Observation as tzh -> tentry.resource = create("Observation") as ush then TZHeightToUSHeight( tzh, ush ) "convertHeight";
+  } "setEntry";
+
+}

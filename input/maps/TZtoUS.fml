@@ -1,19 +1,19 @@
 map "http://example.org/StructureMap/TZtoUS" = "TZtoUS"
 
 uses "http://example.org/StructureDefinition/TZWeight" alias Weight as source
-uses "http://hl7.org/fhir/StructureDefinition/Observation" alias Observation as target
+uses "http://hl7.org/fhir/StructureDefinition/Observation" alias Obs as target
 
-group Observation(source src : Weight, target tgt : Observation) {
+group Observation(source src : Weight, target tgt : Obs) {
 
-  // assign from TZ Weight (Observation) the subject to the new target Observation
   src.subject as subject -> tgt.subject = subject "setSubject";
 
   src.status as status -> tgt.status = status "setStatus";
 
   src.code as code -> tgt.code = code "setCode";
+  src.effective as effective -> tgt.effective = effective "setEffective";
 
   src.value : Quantity as value -> tgt.value = create("Quantity") as tgtval then {
-    value.value as weightinkg -> tgtval.value = (%weightinkg * 2.20462) "convertToPounds";
+    value.value as weightinkg -> tgtval.value = (weightinkg * 2.20462) "convertToPounds";
     value.code -> tgtval.code = "[lb_av]" "setCodeToLbs";
     value.unit -> tgtval.unit = "lb_av" "setUnitToLbs";
     value.system as system -> tgtval.system = system "setSystem";

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Bundle",
+  "type" : "collection",
+  "entry": [
+    {
+      "resource": {
+  "resourceType" : "Observation",
+  "id" : "HeightExample",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/TZHeight"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation </b><a name=\"HeightExample\"> </a><a name=\"hcHeightExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;HeightExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TZHeight.html\">TZHeight</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Patient/PatientExample</a> &quot; PATIENT&quot;</p><p><b>effective</b>: 2024-06-05 10:00:00+0000</p><p><b>value</b>: 200 centimeters<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8302-2"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "effectiveDateTime" : "2024-06-05T10:00:00Z",
+  "valueQuantity" : {
+    "value" : 200,
+    "unit" : "centimeters",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "cm"
+  }
+}
+    }
+  ]
+}

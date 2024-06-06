@@ -1,0 +1,21 @@
+map "http://example.org/StructureMap/UStoTZ" = "UStoTZ"
+
+uses "http://hl7.org/fhir/StructureDefinition/Observation" alias Observation as source
+uses "http://example.org/StructureDefinition/TZWeight" alias Weight as target
+
+group Observation(source src : Observation, target tgt : Weight) {
+
+  src.subject as subject -> tgt.subject = subject "setSubject";
+
+  src.status as status -> tgt.status = status "setStatus";
+
+  src.code as code -> tgt.code = code "setCode";
+  src.effective as effective -> tgt.effective = effective "setEffective";
+
+  src.value : Quantity as value -> tgt.value = create("Quantity") as tgtval then {
+    value.value as weightinlbs -> tgtval.value = (%weightinlbs / 2.20462) "convertToKgs";
+    value.code -> tgtval.code = "kg" "setCodeToKg";
+    value.unit -> tgtval.unit = "kg" "setUnitToKg";
+    value.system as system -> tgtval.system = system "setSystem";
+  } "setQuantity";
+}

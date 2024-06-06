@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Observation",
+  "id" : "LbsExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation </b><a name=\"WeightExample\"> </a><a name=\"hcWeightExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;WeightExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TZWeight.html\">TZWeight</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Patient/PatientExample</a> &quot; PATIENT&quot;</p><p><b>effective</b>: 2024-06-05 10:00:00+0000</p><p><b>value</b>: 20.2 kilograms<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "effectiveDateTime" : "2024-06-05T10:00:00Z",
+  "valueQuantity" : {
+    "value" : 100,
+    "unit" : "[lb_av]",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "lb_av"
+  }
+}
