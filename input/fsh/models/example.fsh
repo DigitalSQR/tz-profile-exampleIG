@@ -53,3 +53,20 @@ Target: "Observation"
 * -> "Observation"
 * systolic -> "Observation.component[0].valueQuantity.value"
 * diastolic -> "Observation.component[0].valueQuantity.value"
+
+Instance:       ExampleInstance
+InstanceOf:     Example
+Usage:          #example
+
+* firstname = "Test"
+* lastname = "Test"
+* dob = "1999-09-09"
+* gender = #male
+* tribe = #chagga
+* mothersMaidenName = "Test"
+* address = "Arusha"
+* identification = "12345"
+* weight = 50
+* height = 180
+* systolic = 75
+* diastolic = 100

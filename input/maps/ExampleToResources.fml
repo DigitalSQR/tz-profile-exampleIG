@@ -1,0 +1,64 @@
+map "http://example.org/StructureMap/ExampleToResources" = "ExampleToResources"
+
+uses "http://example.org/StructureDefinition/Example" alias Example as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
+
+group ExampleToResources(
+  source src : Example,
+  target tgt : Bundle
+) {
+
+  src -> tgt.type = "collection" "setType";
+  src -> uuid() as pid then {
+
+  src -> tgt.entry as tentry then {
+    src -> tentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+    src -> tentry.resource = create("Patient") as patient then {
+      src -> patient.id = pid "setPID";
+      src -> patient.name as name then {
+        src.lastname as lastname -> name.family = lastname "setLastname";
+        src.firstname as firstname -> name.given = firstname "setFirstname";
+      } "setName";
+      src.dob as dob -> patient.birthDate = dob "setDoB";
+      src.gender as gender -> patient.gender = gender "setGender";
+
+      src.address as address -> patient.address as paddr then {
+        address -> paddr.text = address "setAddressText";
+      } "setAddress";
+
+      src.identification as id -> patient.identifier as identifier then {
+        id -> identifier.value = id "setIdValue";
+        id -> identifier.system = 'urn:oid:1.1.1.1.1' "setSystem";
+      } "setIdentficiation";
+
+      src.tribe as tribe -> patient.extension as extension then {
+        tribe -> extension.value = tribe "setTribeValue";
+        tribe -> extension.url = 'http://example.org/CodeSystem/tz-tribe' "setUrl";
+      } "setTribe";
+      
+
+      src.mothersMaidenName as mothersMaidenName -> patient.extension as extension then {
+        mothersMaidenName -> extension.value = mothersMaidenName "setMMN";
+        mothersMaidenName -> extension.url = 'http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName' "setUrl";
+      } "setMMNExt";
+    } "setPatientResource";
+
+  } "setPatientEntry";
+
+  src.weight as srcweight -> tgt.entry as tentry then {
+    src -> tentry.resource = create("Observation") as weight then {
+      src -> weight.subject as subjref then {
+        src -> subjref.reference = ( "urn:uuid:" & pid ) "setSubjectRef";
+      } "setSubject";
+      src -> weight.code = cc('http://loinc.org', '29463-7') "setCode";
+      srcweight -> weight.value = create("Quantity") as value then {
+        srcweight -> value.value = srcweight "setWeightValue";
+        srcweight -> value.unit = 'kg' "setUnit";
+        srcweight -> value.system = 'http://unitsofmeasure.org' "setSystem";
+        srcweight -> value.code = 'kg' "setCode";
+      } "setWeightQuantity";
+    } "setWeightResource";
+  } "setWeightEntry";
+}"createPatientId";
+
+}
