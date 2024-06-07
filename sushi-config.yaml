@@ -26,6 +26,8 @@ publisher:
 #
 dependencies:
   hl7.fhir.uv.ips: current
+  hl7.fhir.uv.cpg: current
+  hl7.fhir.us.cqfmeasures: current
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -63,7 +65,10 @@ dependencies:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
+parameters:
+  path-resources:
+    input/resources/device
+    input/resources/library
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #

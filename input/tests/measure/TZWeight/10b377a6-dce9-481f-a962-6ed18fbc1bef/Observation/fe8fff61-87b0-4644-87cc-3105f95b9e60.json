@@ -1,0 +1,56 @@
+      {
+        "resourceType": "Observation",
+        "id": "fe8fff61-87b0-4644-87cc-3105f95b9e60",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10b377a6-dce9-481f-a962-6ed18fbc1bef"
+        },
+        "effectiveDateTime": "2023-08-24T22:45:36.739Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 51,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 84,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      }

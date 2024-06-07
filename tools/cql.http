@@ -1,0 +1,52 @@
+@host = http://localhost:8080/fhir
+
+### Save the first random bundle of patients and observations
+POST {{host}} HTTP/1.1
+Content-Type: application/fhir+json
+
+< ../input/resources/random-data-bundle.json
+
+### Save the second random bundle of patients and observations
+POST {{host}} HTTP/1.1
+Content-Type: application/fhir+json
+
+< ../input/resources/random-data-bundle2.json
+
+### Save the second random bundle of patients and observations
+POST {{host}} HTTP/1.1
+Content-Type: application/fhir+json
+
+< ../input/resources/random-data-bundle3.json
+
+### Save the Libraries FHIRHelpers
+PUT {{host}}/Library/FHIRHelpers
+Content-Type: application/fhir+json
+
+< ../output/Library-FHIRHelpers.json
+
+### Save the Libraries FHIRCommon
+PUT {{host}}/Library/FHIRCommon
+Content-Type: application/fhir+json
+
+< ../output/Library-FHIRCommon.json
+
+### Save the Libraries TZConcepts
+PUT {{host}}/Library/TZConcepts
+Content-Type: application/fhir+json
+
+< ../output/Library-TZConcepts.json
+
+### Save the Libraries TZWeight
+PUT {{host}}/Library/TZWeight
+Content-Type: application/fhir+json
+
+< ../input/resources/library/TZWeight.json
+
+### Save the measure
+PUT {{host}}/Measure/TZOverweight
+Content-Type: application/fhir+json
+
+< ../fsh-generated/resources/Measure-TZOverweight.json
+
+### Run the measure
+GET {{host}}/Measure/TZOverweight/$evaluate-measure?periodStart=2023-10-01&periodEnd=2023-12-31

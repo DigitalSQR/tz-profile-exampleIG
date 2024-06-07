@@ -1,49 +1,49 @@
 {
   "resourceType": "Bundle",
-  "id": "173ddcd2-2301-11ef-a1ee-a3728d4904c7",
+  "id": "dcfa3350-2499-11ef-b734-5b2675817207",
   "type": "batch",
   "entry": [
     {
-      "fullUrl": "urn:uuid:c3d5d9f0-7abb-4749-a82c-77702b9a63c4",
+      "fullUrl": "urn:uuid:5f81e52c-2abf-4507-9f20-a55bd8a8d14f",
       "resource": {
         "resourceType": "Patient",
-        "id": "c3d5d9f0-7abb-4749-a82c-77702b9a63c4",
+        "id": "5f81e52c-2abf-4507-9f20-a55bd8a8d14f",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
+            "valueCode": "suba"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Sibiya"
+            "valueString": "Mbatha"
           }
         ],
         "name": [
           {
-            "family": "Nozulu",
+            "family": "Bhengani",
             "given": [
-              "Zobuhle"
+              "Bonginkosi"
             ]
           }
         ],
-        "gender": "female",
-        "birthDate": "1996-06-04",
+        "gender": "male",
+        "birthDate": "1988-02-21",
         "address": [
           {
-            "text": "142 Ayanda Wells"
+            "text": "7794 Ntokozo Dam"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/c3d5d9f0-7abb-4749-a82c-77702b9a63c4"
+        "url": "Patient/5f81e52c-2abf-4507-9f20-a55bd8a8d14f"
       }
     },
     {
-      "fullUrl": "urn:uuid:cf81a08a-761d-4fd1-bfad-666a2125ff5e",
+      "fullUrl": "urn:uuid:ebc457f8-73df-4342-b57e-155d0020ae54",
       "resource": {
         "resourceType": "Observation",
-        "id": "cf81a08a-761d-4fd1-bfad-666a2125ff5e",
+        "id": "ebc457f8-73df-4342-b57e-155d0020ae54",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -59,10 +59,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/c3d5d9f0-7abb-4749-a82c-77702b9a63c4"
+          "reference": "Patient/5f81e52c-2abf-4507-9f20-a55bd8a8d14f"
         },
+        "effectiveDateTime": "2024-03-14T19:55:00.237Z",
         "valueQuantity": {
-          "value": 63,
+          "value": 84.7,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -70,14 +71,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/cf81a08a-761d-4fd1-bfad-666a2125ff5e"
+        "url": "Observation/ebc457f8-73df-4342-b57e-155d0020ae54"
       }
     },
     {
-      "fullUrl": "urn:uuid:744f6136-54d3-442e-81d4-6f5df4a42444",
+      "fullUrl": "urn:uuid:da66ddfb-5c0d-4e05-bd49-f7c16b4e5044",
       "resource": {
         "resourceType": "Observation",
-        "id": "744f6136-54d3-442e-81d4-6f5df4a42444",
+        "id": "da66ddfb-5c0d-4e05-bd49-f7c16b4e5044",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -93,10 +94,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/c3d5d9f0-7abb-4749-a82c-77702b9a63c4"
+          "reference": "Patient/5f81e52c-2abf-4507-9f20-a55bd8a8d14f"
         },
+        "effectiveDateTime": "2024-03-14T19:55:00.237Z",
         "valueQuantity": {
-          "value": 194,
+          "value": 163,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -104,14 +106,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/744f6136-54d3-442e-81d4-6f5df4a42444"
+        "url": "Observation/da66ddfb-5c0d-4e05-bd49-f7c16b4e5044"
       }
     },
     {
-      "fullUrl": "urn:uuid:19d49b7a-4770-42b7-b558-eb96690e8c64",
+      "fullUrl": "urn:uuid:9cd2f3fa-bde3-485b-b3e1-6dbcda58ae7d",
       "resource": {
         "resourceType": "Observation",
-        "id": "19d49b7a-4770-42b7-b558-eb96690e8c64",
+        "id": "9cd2f3fa-bde3-485b-b3e1-6dbcda58ae7d",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -127,8 +129,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/c3d5d9f0-7abb-4749-a82c-77702b9a63c4"
+          "reference": "Patient/5f81e52c-2abf-4507-9f20-a55bd8a8d14f"
         },
+        "effectiveDateTime": "2024-03-14T19:55:00.237Z",
         "component": [
           {
             "code": {
@@ -140,7 +143,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 101,
+              "value": 56,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -156,7 +159,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 68,
+              "value": 36,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -166,50 +169,50 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/19d49b7a-4770-42b7-b558-eb96690e8c64"
+        "url": "Observation/9cd2f3fa-bde3-485b-b3e1-6dbcda58ae7d"
       }
     },
     {
-      "fullUrl": "urn:uuid:202eafcf-bcbb-4cdc-bca3-e97f3177ff6f",
+      "fullUrl": "urn:uuid:cdbb7d72-182e-4ace-b9e1-e59d9432c371",
       "resource": {
         "resourceType": "Patient",
-        "id": "202eafcf-bcbb-4cdc-bca3-e97f3177ff6f",
+        "id": "cdbb7d72-182e-4ace-b9e1-e59d9432c371",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "chagga"
+            "valueCode": "barabaig"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Thoyana"
+            "valueString": "Nsele"
           }
         ],
         "name": [
           {
-            "family": "Vilakazi",
+            "family": "Ngwazi",
             "given": [
-              "Mhambi"
+              "Mpumelelo"
             ]
           }
         ],
-        "gender": "female",
-        "birthDate": "1944-02-03",
+        "gender": "male",
+        "birthDate": "1951-04-13",
         "address": [
           {
-            "text": "997 Yengwa Mall"
+            "text": "78528 Dhlomo Meadow"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/202eafcf-bcbb-4cdc-bca3-e97f3177ff6f"
+        "url": "Patient/cdbb7d72-182e-4ace-b9e1-e59d9432c371"
       }
     },
     {
-      "fullUrl": "urn:uuid:bf5bb9ac-9b99-47be-86bb-9c61d7fa106b",
+      "fullUrl": "urn:uuid:c91bc0f5-a0fb-4ac6-8d10-a5f1d58cdf92",
       "resource": {
         "resourceType": "Observation",
-        "id": "bf5bb9ac-9b99-47be-86bb-9c61d7fa106b",
+        "id": "c91bc0f5-a0fb-4ac6-8d10-a5f1d58cdf92",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -225,10 +228,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/202eafcf-bcbb-4cdc-bca3-e97f3177ff6f"
+          "reference": "Patient/cdbb7d72-182e-4ace-b9e1-e59d9432c371"
         },
+        "effectiveDateTime": "2023-10-17T12:13:47.648Z",
         "valueQuantity": {
-          "value": 66.1,
+          "value": 90.9,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -236,14 +240,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/bf5bb9ac-9b99-47be-86bb-9c61d7fa106b"
+        "url": "Observation/c91bc0f5-a0fb-4ac6-8d10-a5f1d58cdf92"
       }
     },
     {
-      "fullUrl": "urn:uuid:d9714e90-f487-41f6-a42a-c805b6439c82",
+      "fullUrl": "urn:uuid:9f4ddc14-fc87-4706-8e19-e8faebd6696d",
       "resource": {
         "resourceType": "Observation",
-        "id": "d9714e90-f487-41f6-a42a-c805b6439c82",
+        "id": "9f4ddc14-fc87-4706-8e19-e8faebd6696d",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -259,10 +263,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/202eafcf-bcbb-4cdc-bca3-e97f3177ff6f"
+          "reference": "Patient/cdbb7d72-182e-4ace-b9e1-e59d9432c371"
         },
+        "effectiveDateTime": "2023-10-17T12:13:47.648Z",
         "valueQuantity": {
-          "value": 156,
+          "value": 189,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -270,14 +275,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/d9714e90-f487-41f6-a42a-c805b6439c82"
+        "url": "Observation/9f4ddc14-fc87-4706-8e19-e8faebd6696d"
       }
     },
     {
-      "fullUrl": "urn:uuid:9a0a3498-a719-4df3-888e-bbef7831613d",
+      "fullUrl": "urn:uuid:26e5d256-5121-4d21-8aef-bb3a189c769e",
       "resource": {
         "resourceType": "Observation",
-        "id": "9a0a3498-a719-4df3-888e-bbef7831613d",
+        "id": "26e5d256-5121-4d21-8aef-bb3a189c769e",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -293,8 +298,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/202eafcf-bcbb-4cdc-bca3-e97f3177ff6f"
+          "reference": "Patient/cdbb7d72-182e-4ace-b9e1-e59d9432c371"
         },
+        "effectiveDateTime": "2023-10-17T12:13:47.648Z",
         "component": [
           {
             "code": {
@@ -302,22 +308,6 @@
                 {
                   "system": "http://loinc.org",
                   "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 58,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
                 }
               ]
             },
@@ -327,55 +317,71 @@
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
             }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 89,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/9a0a3498-a719-4df3-888e-bbef7831613d"
+        "url": "Observation/26e5d256-5121-4d21-8aef-bb3a189c769e"
       }
     },
     {
-      "fullUrl": "urn:uuid:89bf42cd-41ef-4bb5-bde8-41e7b7c95638",
+      "fullUrl": "urn:uuid:a595ab51-123a-42bf-80d4-818906f91964",
       "resource": {
         "resourceType": "Patient",
-        "id": "89bf42cd-41ef-4bb5-bde8-41e7b7c95638",
+        "id": "a595ab51-123a-42bf-80d4-818906f91964",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "chagga"
+            "valueCode": "kuria"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Ngcolosi"
+            "valueString": "Dhlomo"
           }
         ],
         "name": [
           {
-            "family": "Zungu",
+            "family": "Mkhatshwa",
             "given": [
-              "Samukelisiwe"
+              "Yibanathi"
             ]
           }
         ],
         "gender": "female",
-        "birthDate": "1958-11-08",
+        "birthDate": "1994-04-05",
         "address": [
           {
-            "text": "473 Kgabu River"
+            "text": "34330 Mkhatshwa Motorway"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/89bf42cd-41ef-4bb5-bde8-41e7b7c95638"
+        "url": "Patient/a595ab51-123a-42bf-80d4-818906f91964"
       }
     },
     {
-      "fullUrl": "urn:uuid:da2bab60-a3fe-47d7-9213-d421e706ef06",
+      "fullUrl": "urn:uuid:2c28087c-1be5-4d5e-b87c-9f364669dc03",
       "resource": {
         "resourceType": "Observation",
-        "id": "da2bab60-a3fe-47d7-9213-d421e706ef06",
+        "id": "2c28087c-1be5-4d5e-b87c-9f364669dc03",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -391,10 +397,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/89bf42cd-41ef-4bb5-bde8-41e7b7c95638"
+          "reference": "Patient/a595ab51-123a-42bf-80d4-818906f91964"
         },
+        "effectiveDateTime": "2023-07-29T02:01:27.474Z",
         "valueQuantity": {
-          "value": 72.5,
+          "value": 63.9,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -402,14 +409,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/da2bab60-a3fe-47d7-9213-d421e706ef06"
+        "url": "Observation/2c28087c-1be5-4d5e-b87c-9f364669dc03"
       }
     },
     {
-      "fullUrl": "urn:uuid:0295ef4f-287b-4449-8837-71043b0b8551",
+      "fullUrl": "urn:uuid:71a13149-f4c4-4756-bdef-0e6df22e6600",
       "resource": {
         "resourceType": "Observation",
-        "id": "0295ef4f-287b-4449-8837-71043b0b8551",
+        "id": "71a13149-f4c4-4756-bdef-0e6df22e6600",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -425,10 +432,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/89bf42cd-41ef-4bb5-bde8-41e7b7c95638"
+          "reference": "Patient/a595ab51-123a-42bf-80d4-818906f91964"
         },
+        "effectiveDateTime": "2023-07-29T02:01:27.474Z",
         "valueQuantity": {
-          "value": 186,
+          "value": 149,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -436,14 +444,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/0295ef4f-287b-4449-8837-71043b0b8551"
+        "url": "Observation/71a13149-f4c4-4756-bdef-0e6df22e6600"
       }
     },
     {
-      "fullUrl": "urn:uuid:d7bb11ae-5b71-4d64-a04c-f962812b3a92",
+      "fullUrl": "urn:uuid:726937f2-4832-49a1-9f38-99d929660346",
       "resource": {
         "resourceType": "Observation",
-        "id": "d7bb11ae-5b71-4d64-a04c-f962812b3a92",
+        "id": "726937f2-4832-49a1-9f38-99d929660346",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -459,8 +467,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/89bf42cd-41ef-4bb5-bde8-41e7b7c95638"
+          "reference": "Patient/a595ab51-123a-42bf-80d4-818906f91964"
         },
+        "effectiveDateTime": "2023-07-29T02:01:27.474Z",
         "component": [
           {
             "code": {
@@ -472,7 +481,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 121,
+              "value": 152,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -488,7 +497,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 117,
+              "value": 93,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -498,216 +507,50 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/d7bb11ae-5b71-4d64-a04c-f962812b3a92"
+        "url": "Observation/726937f2-4832-49a1-9f38-99d929660346"
       }
     },
     {
-      "fullUrl": "urn:uuid:37f44127-47ea-475d-a69e-bd216575b6c4",
+      "fullUrl": "urn:uuid:f8678716-52ff-4254-a802-c8b431e11a2f",
       "resource": {
         "resourceType": "Patient",
-        "id": "37f44127-47ea-475d-a69e-bd216575b6c4",
+        "id": "f8678716-52ff-4254-a802-c8b431e11a2f",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
+            "valueCode": "doe"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Nondlela"
+            "valueString": "Ntombela"
           }
         ],
         "name": [
           {
-            "family": "Fuze",
+            "family": "Vilakazi",
             "given": [
-              "Sizani"
-            ]
-          }
-        ],
-        "gender": "female",
-        "birthDate": "2000-08-14",
-        "address": [
-          {
-            "text": "82154 Inyoni Vista"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/37f44127-47ea-475d-a69e-bd216575b6c4"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:0e8727c9-a58b-46da-a449-f3f30a7cec19",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "0e8727c9-a58b-46da-a449-f3f30a7cec19",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/37f44127-47ea-475d-a69e-bd216575b6c4"
-        },
-        "valueQuantity": {
-          "value": 59.9,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/0e8727c9-a58b-46da-a449-f3f30a7cec19"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:58aa3956-3797-41d0-a6af-8c5335f9aaaa",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "58aa3956-3797-41d0-a6af-8c5335f9aaaa",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/37f44127-47ea-475d-a69e-bd216575b6c4"
-        },
-        "valueQuantity": {
-          "value": 150,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/58aa3956-3797-41d0-a6af-8c5335f9aaaa"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:055c3837-7b8a-4568-b609-3576bc7dab92",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "055c3837-7b8a-4568-b609-3576bc7dab92",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/37f44127-47ea-475d-a69e-bd216575b6c4"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 53,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 103,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/055c3837-7b8a-4568-b609-3576bc7dab92"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:9b79d1dc-d065-4595-893b-c2840cc7e423",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "9b79d1dc-d065-4595-893b-c2840cc7e423",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "chagga"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Maduma"
-          }
-        ],
-        "name": [
-          {
-            "family": "Zondo",
-            "given": [
-              "Sithembiso"
+              "Thulani"
             ]
           }
         ],
         "gender": "male",
-        "birthDate": "1954-04-12",
+        "birthDate": "1964-08-04",
         "address": [
           {
-            "text": "4021 Anele Unions"
+            "text": "64879 Mpilo Causeway"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/9b79d1dc-d065-4595-893b-c2840cc7e423"
+        "url": "Patient/f8678716-52ff-4254-a802-c8b431e11a2f"
       }
     },
     {
-      "fullUrl": "urn:uuid:8af70bc3-22ae-4e55-a33f-5a5ac62bb90b",
+      "fullUrl": "urn:uuid:12eaa0a7-a2a8-4de7-bcd0-7b4a083fef5d",
       "resource": {
         "resourceType": "Observation",
-        "id": "8af70bc3-22ae-4e55-a33f-5a5ac62bb90b",
+        "id": "12eaa0a7-a2a8-4de7-bcd0-7b4a083fef5d",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -723,10 +566,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/9b79d1dc-d065-4595-893b-c2840cc7e423"
+          "reference": "Patient/f8678716-52ff-4254-a802-c8b431e11a2f"
         },
+        "effectiveDateTime": "2024-04-23T18:18:08.949Z",
         "valueQuantity": {
-          "value": 88,
+          "value": 139.8,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -734,14 +578,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/8af70bc3-22ae-4e55-a33f-5a5ac62bb90b"
+        "url": "Observation/12eaa0a7-a2a8-4de7-bcd0-7b4a083fef5d"
       }
     },
     {
-      "fullUrl": "urn:uuid:f954e512-8b75-4586-9154-baba5ef2259b",
+      "fullUrl": "urn:uuid:8398a70a-557a-4cbd-a056-d296e3bc834a",
       "resource": {
         "resourceType": "Observation",
-        "id": "f954e512-8b75-4586-9154-baba5ef2259b",
+        "id": "8398a70a-557a-4cbd-a056-d296e3bc834a",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -757,10 +601,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/9b79d1dc-d065-4595-893b-c2840cc7e423"
+          "reference": "Patient/f8678716-52ff-4254-a802-c8b431e11a2f"
         },
+        "effectiveDateTime": "2024-04-23T18:18:08.949Z",
         "valueQuantity": {
-          "value": 164,
+          "value": 187,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -768,14 +613,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/f954e512-8b75-4586-9154-baba5ef2259b"
+        "url": "Observation/8398a70a-557a-4cbd-a056-d296e3bc834a"
       }
     },
     {
-      "fullUrl": "urn:uuid:1d3e9562-25e5-4f79-bdfd-baa95122c5a1",
+      "fullUrl": "urn:uuid:938ac937-d1ab-4d08-8740-45f6ae901631",
       "resource": {
         "resourceType": "Observation",
-        "id": "1d3e9562-25e5-4f79-bdfd-baa95122c5a1",
+        "id": "938ac937-d1ab-4d08-8740-45f6ae901631",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -791,8 +636,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/9b79d1dc-d065-4595-893b-c2840cc7e423"
+          "reference": "Patient/f8678716-52ff-4254-a802-c8b431e11a2f"
         },
+        "effectiveDateTime": "2024-04-23T18:18:08.949Z",
         "component": [
           {
             "code": {
@@ -804,7 +650,852 @@
               ]
             },
             "valueQuantity": {
-              "value": 91,
+              "value": 72,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 54,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/938ac937-d1ab-4d08-8740-45f6ae901631"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eb150ed0-4bc9-443d-8c53-2baaf53777b1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "eb150ed0-4bc9-443d-8c53-2baaf53777b1",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "wanji"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Zondi"
+          }
+        ],
+        "name": [
+          {
+            "family": "Mqwebu",
+            "given": [
+              "Nolwazi"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1974-01-30",
+        "address": [
+          {
+            "text": "68076 Buhle Mall"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/eb150ed0-4bc9-443d-8c53-2baaf53777b1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c7cc2c83-00bb-49cb-a370-32747eb19744",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c7cc2c83-00bb-49cb-a370-32747eb19744",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/eb150ed0-4bc9-443d-8c53-2baaf53777b1"
+        },
+        "effectiveDateTime": "2024-06-01T15:10:58.822Z",
+        "valueQuantity": {
+          "value": 139.8,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/c7cc2c83-00bb-49cb-a370-32747eb19744"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4d91783b-5678-4061-aa30-b8a20fc58736",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4d91783b-5678-4061-aa30-b8a20fc58736",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/eb150ed0-4bc9-443d-8c53-2baaf53777b1"
+        },
+        "effectiveDateTime": "2024-06-01T15:10:58.822Z",
+        "valueQuantity": {
+          "value": 167,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4d91783b-5678-4061-aa30-b8a20fc58736"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3744b8ae-cee5-468b-9bbc-5c28aca498cc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3744b8ae-cee5-468b-9bbc-5c28aca498cc",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/eb150ed0-4bc9-443d-8c53-2baaf53777b1"
+        },
+        "effectiveDateTime": "2024-06-01T15:10:58.822Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 131,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 98,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/3744b8ae-cee5-468b-9bbc-5c28aca498cc"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:292be0ef-6095-4cff-961c-55a52409fd7b",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "292be0ef-6095-4cff-961c-55a52409fd7b",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "mambwe"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Dhlomo"
+          }
+        ],
+        "name": [
+          {
+            "family": "Nozulu",
+            "given": [
+              "Velaphi"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1948-11-28",
+        "address": [
+          {
+            "text": "50455 Cele Point"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/292be0ef-6095-4cff-961c-55a52409fd7b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aeb1cee3-7f9d-42a8-a31b-9d917f3a8ca1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "aeb1cee3-7f9d-42a8-a31b-9d917f3a8ca1",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/292be0ef-6095-4cff-961c-55a52409fd7b"
+        },
+        "effectiveDateTime": "2024-03-24T21:48:42.285Z",
+        "valueQuantity": {
+          "value": 116.6,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/aeb1cee3-7f9d-42a8-a31b-9d917f3a8ca1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ad74614e-fd1a-47af-82c2-9e38e4f21a6c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ad74614e-fd1a-47af-82c2-9e38e4f21a6c",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/292be0ef-6095-4cff-961c-55a52409fd7b"
+        },
+        "effectiveDateTime": "2024-03-24T21:48:42.285Z",
+        "valueQuantity": {
+          "value": 196,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ad74614e-fd1a-47af-82c2-9e38e4f21a6c"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:31c3beb8-4aa5-4b87-bb7a-39543b25ffc0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "31c3beb8-4aa5-4b87-bb7a-39543b25ffc0",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/292be0ef-6095-4cff-961c-55a52409fd7b"
+        },
+        "effectiveDateTime": "2024-03-24T21:48:42.285Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 163,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 65,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/31c3beb8-4aa5-4b87-bb7a-39543b25ffc0"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0bc39525-3b78-4f75-b1c2-479e2dc8da3b",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "0bc39525-3b78-4f75-b1c2-479e2dc8da3b",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "kerewe"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Gwala"
+          }
+        ],
+        "name": [
+          {
+            "family": "Nondlela",
+            "given": [
+              "Ntokozo"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1993-02-06",
+        "address": [
+          {
+            "text": "9957 Biyela Branch"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/0bc39525-3b78-4f75-b1c2-479e2dc8da3b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0ef47341-36be-4656-b6a7-668a8fdcbc34",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0ef47341-36be-4656-b6a7-668a8fdcbc34",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/0bc39525-3b78-4f75-b1c2-479e2dc8da3b"
+        },
+        "effectiveDateTime": "2023-11-16T03:24:57.099Z",
+        "valueQuantity": {
+          "value": 146.5,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0ef47341-36be-4656-b6a7-668a8fdcbc34"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cf859342-5ae7-43fa-b473-93d5bedec211",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cf859342-5ae7-43fa-b473-93d5bedec211",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/0bc39525-3b78-4f75-b1c2-479e2dc8da3b"
+        },
+        "effectiveDateTime": "2023-11-16T03:24:57.099Z",
+        "valueQuantity": {
+          "value": 192,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cf859342-5ae7-43fa-b473-93d5bedec211"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cfd860d4-8c3e-43ed-8f5a-5fd19657a25f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cfd860d4-8c3e-43ed-8f5a-5fd19657a25f",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/0bc39525-3b78-4f75-b1c2-479e2dc8da3b"
+        },
+        "effectiveDateTime": "2023-11-16T03:24:57.099Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 141,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 64,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cfd860d4-8c3e-43ed-8f5a-5fd19657a25f"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:38f76e66-b844-4c23-b335-3b85eb264825",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "38f76e66-b844-4c23-b335-3b85eb264825",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "fipa"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Khawula"
+          }
+        ],
+        "name": [
+          {
+            "family": "Mbende",
+            "given": [
+              "Zanele"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1967-06-26",
+        "address": [
+          {
+            "text": "2846 Mashinini Glens"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/38f76e66-b844-4c23-b335-3b85eb264825"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1ad94e4c-90b2-45dc-ab16-226a16682d6b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1ad94e4c-90b2-45dc-ab16-226a16682d6b",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/38f76e66-b844-4c23-b335-3b85eb264825"
+        },
+        "effectiveDateTime": "2023-08-25T15:16:45.295Z",
+        "valueQuantity": {
+          "value": 98.3,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/1ad94e4c-90b2-45dc-ab16-226a16682d6b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:71489c8d-d3b7-4b84-baf2-e6497ab60dac",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "71489c8d-d3b7-4b84-baf2-e6497ab60dac",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/38f76e66-b844-4c23-b335-3b85eb264825"
+        },
+        "effectiveDateTime": "2023-08-25T15:16:45.295Z",
+        "valueQuantity": {
+          "value": 172,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/71489c8d-d3b7-4b84-baf2-e6497ab60dac"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:12f94ffe-cb03-49a5-bc23-9bb17f025015",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "12f94ffe-cb03-49a5-bc23-9bb17f025015",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/38f76e66-b844-4c23-b335-3b85eb264825"
+        },
+        "effectiveDateTime": "2023-08-25T15:16:45.295Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 161,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 105,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/12f94ffe-cb03-49a5-bc23-9bb17f025015"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6f14d5d4-c392-460f-8e0e-2f51a5205c87",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "6f14d5d4-c392-460f-8e0e-2f51a5205c87",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "burunge"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Mabizela"
+          }
+        ],
+        "name": [
+          {
+            "family": "Delazy",
+            "given": [
+              "Buhle"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1977-05-08",
+        "address": [
+          {
+            "text": "8922 Shaka Loaf"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/6f14d5d4-c392-460f-8e0e-2f51a5205c87"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:27f9d4e6-1b44-4b12-baf9-5a635f8b1d4e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "27f9d4e6-1b44-4b12-baf9-5a635f8b1d4e",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/6f14d5d4-c392-460f-8e0e-2f51a5205c87"
+        },
+        "effectiveDateTime": "2023-11-05T03:09:49.779Z",
+        "valueQuantity": {
+          "value": 88.7,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/27f9d4e6-1b44-4b12-baf9-5a635f8b1d4e"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:690627cb-a7ba-4ad1-849a-7b63f87bceb4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "690627cb-a7ba-4ad1-849a-7b63f87bceb4",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/6f14d5d4-c392-460f-8e0e-2f51a5205c87"
+        },
+        "effectiveDateTime": "2023-11-05T03:09:49.779Z",
+        "valueQuantity": {
+          "value": 160,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/690627cb-a7ba-4ad1-849a-7b63f87bceb4"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6e6a4db5-26dc-4c9f-9a24-273569916854",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6e6a4db5-26dc-4c9f-9a24-273569916854",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/6f14d5d4-c392-460f-8e0e-2f51a5205c87"
+        },
+        "effectiveDateTime": "2023-11-05T03:09:49.779Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 87,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -830,216 +1521,50 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/1d3e9562-25e5-4f79-bdfd-baa95122c5a1"
+        "url": "Observation/6e6a4db5-26dc-4c9f-9a24-273569916854"
       }
     },
     {
-      "fullUrl": "urn:uuid:21ff50bf-40d4-4aeb-ae08-1abe009fd02b",
+      "fullUrl": "urn:uuid:ab4377e2-4b97-4082-83e4-df434c0e3db1",
       "resource": {
         "resourceType": "Patient",
-        "id": "21ff50bf-40d4-4aeb-ae08-1abe009fd02b",
+        "id": "ab4377e2-4b97-4082-83e4-df434c0e3db1",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
+            "valueCode": "rangi"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Musi"
-          }
-        ],
-        "name": [
-          {
-            "family": "Magoza",
-            "given": [
-              "Nkosinhle"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1958-11-12",
-        "address": [
-          {
-            "text": "39095 Mbatha Skyway"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/21ff50bf-40d4-4aeb-ae08-1abe009fd02b"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:07272c79-a8b6-4294-a682-6542d1e07c59",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "07272c79-a8b6-4294-a682-6542d1e07c59",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/21ff50bf-40d4-4aeb-ae08-1abe009fd02b"
-        },
-        "valueQuantity": {
-          "value": 64.3,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/07272c79-a8b6-4294-a682-6542d1e07c59"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:0e41bfee-c6ca-4467-92b2-e7fbeb369055",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "0e41bfee-c6ca-4467-92b2-e7fbeb369055",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/21ff50bf-40d4-4aeb-ae08-1abe009fd02b"
-        },
-        "valueQuantity": {
-          "value": 200,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/0e41bfee-c6ca-4467-92b2-e7fbeb369055"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:a6443eda-b252-4f35-a101-1ccd211db64e",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "a6443eda-b252-4f35-a101-1ccd211db64e",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/21ff50bf-40d4-4aeb-ae08-1abe009fd02b"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 129,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 66,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/a6443eda-b252-4f35-a101-1ccd211db64e"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:ab2b60b3-da2c-45e2-8b99-440cb6adca99",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "ab2b60b3-da2c-45e2-8b99-440cb6adca99",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Magoza"
+            "valueString": "Ndebele"
           }
         ],
         "name": [
           {
             "family": "Musi",
             "given": [
-              "Vusumuzi"
+              "Phila"
             ]
           }
         ],
         "gender": "male",
-        "birthDate": "1954-03-15",
+        "birthDate": "1997-10-04",
         "address": [
           {
-            "text": "671 Vilakazi Parkway"
+            "text": "44719 Bangizwe Orchard"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/ab2b60b3-da2c-45e2-8b99-440cb6adca99"
+        "url": "Patient/ab4377e2-4b97-4082-83e4-df434c0e3db1"
       }
     },
     {
-      "fullUrl": "urn:uuid:bf9fcb77-65ee-4c59-ab90-ff0ac3e8a55a",
+      "fullUrl": "urn:uuid:390199e1-3f6f-4c8b-90d1-7b0f33799cf4",
       "resource": {
         "resourceType": "Observation",
-        "id": "bf9fcb77-65ee-4c59-ab90-ff0ac3e8a55a",
+        "id": "390199e1-3f6f-4c8b-90d1-7b0f33799cf4",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -1055,10 +1580,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/ab2b60b3-da2c-45e2-8b99-440cb6adca99"
+          "reference": "Patient/ab4377e2-4b97-4082-83e4-df434c0e3db1"
         },
+        "effectiveDateTime": "2023-11-23T02:47:41.314Z",
         "valueQuantity": {
-          "value": 60.1,
+          "value": 81.1,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -1066,14 +1592,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/bf9fcb77-65ee-4c59-ab90-ff0ac3e8a55a"
+        "url": "Observation/390199e1-3f6f-4c8b-90d1-7b0f33799cf4"
       }
     },
     {
-      "fullUrl": "urn:uuid:fde20f42-ed3e-4e68-877b-e3f2c327148b",
+      "fullUrl": "urn:uuid:0939e103-8588-4645-9741-9317d2532345",
       "resource": {
         "resourceType": "Observation",
-        "id": "fde20f42-ed3e-4e68-877b-e3f2c327148b",
+        "id": "0939e103-8588-4645-9741-9317d2532345",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -1089,10 +1615,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/ab2b60b3-da2c-45e2-8b99-440cb6adca99"
+          "reference": "Patient/ab4377e2-4b97-4082-83e4-df434c0e3db1"
         },
+        "effectiveDateTime": "2023-11-23T02:47:41.314Z",
         "valueQuantity": {
-          "value": 174,
+          "value": 180,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -1100,14 +1627,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/fde20f42-ed3e-4e68-877b-e3f2c327148b"
+        "url": "Observation/0939e103-8588-4645-9741-9317d2532345"
       }
     },
     {
-      "fullUrl": "urn:uuid:c0b92c55-d7aa-443b-a8ea-a9966dfd6e6c",
+      "fullUrl": "urn:uuid:a2300a52-358e-4fe1-ad79-1c7f2e32a9e9",
       "resource": {
         "resourceType": "Observation",
-        "id": "c0b92c55-d7aa-443b-a8ea-a9966dfd6e6c",
+        "id": "a2300a52-358e-4fe1-ad79-1c7f2e32a9e9",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -1123,838 +1650,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/ab2b60b3-da2c-45e2-8b99-440cb6adca99"
+          "reference": "Patient/ab4377e2-4b97-4082-83e4-df434c0e3db1"
         },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 99,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 108,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/c0b92c55-d7aa-443b-a8ea-a9966dfd6e6c"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:8d356a9f-d823-4133-8d15-9f88e687d5ee",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "8d356a9f-d823-4133-8d15-9f88e687d5ee",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "chagga"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Mfeka"
-          }
-        ],
-        "name": [
-          {
-            "family": "Bhembe",
-            "given": [
-              "Mandla"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1953-12-26",
-        "address": [
-          {
-            "text": "60816 Nonyana Junctions"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/8d356a9f-d823-4133-8d15-9f88e687d5ee"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:ba672af8-e634-4e0b-9b88-8caa735f0bca",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "ba672af8-e634-4e0b-9b88-8caa735f0bca",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/8d356a9f-d823-4133-8d15-9f88e687d5ee"
-        },
-        "valueQuantity": {
-          "value": 55.5,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/ba672af8-e634-4e0b-9b88-8caa735f0bca"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:f2e2f28c-a7ff-478f-9fd6-efff9fb4726f",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "f2e2f28c-a7ff-478f-9fd6-efff9fb4726f",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/8d356a9f-d823-4133-8d15-9f88e687d5ee"
-        },
-        "valueQuantity": {
-          "value": 192,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/f2e2f28c-a7ff-478f-9fd6-efff9fb4726f"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:629aa1de-fe16-49e8-b0c8-4410953bf865",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "629aa1de-fe16-49e8-b0c8-4410953bf865",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/8d356a9f-d823-4133-8d15-9f88e687d5ee"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 106,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 54,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/629aa1de-fe16-49e8-b0c8-4410953bf865"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:a88b7d12-d5b8-4229-99fb-bce28bb64c02",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "a88b7d12-d5b8-4229-99fb-bce28bb64c02",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Ncusi"
-          }
-        ],
-        "name": [
-          {
-            "family": "Biyela",
-            "given": [
-              "Khanyisile"
-            ]
-          }
-        ],
-        "gender": "female",
-        "birthDate": "1984-05-23",
-        "address": [
-          {
-            "text": "52437 Langa Causeway"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/a88b7d12-d5b8-4229-99fb-bce28bb64c02"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:2f0c1a37-3588-4e3e-a090-18596caca356",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "2f0c1a37-3588-4e3e-a090-18596caca356",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/a88b7d12-d5b8-4229-99fb-bce28bb64c02"
-        },
-        "valueQuantity": {
-          "value": 74,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/2f0c1a37-3588-4e3e-a090-18596caca356"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:7eb95b7a-83ed-4f16-9736-420570063e0f",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "7eb95b7a-83ed-4f16-9736-420570063e0f",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/a88b7d12-d5b8-4229-99fb-bce28bb64c02"
-        },
-        "valueQuantity": {
-          "value": 174,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/7eb95b7a-83ed-4f16-9736-420570063e0f"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:1b072835-7081-4731-b2f4-5a8d56c896e3",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "1b072835-7081-4731-b2f4-5a8d56c896e3",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/a88b7d12-d5b8-4229-99fb-bce28bb64c02"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 143,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 85,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/1b072835-7081-4731-b2f4-5a8d56c896e3"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:cf43230b-b9ee-46f9-bfdc-6105ce3bfd09",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "cf43230b-b9ee-46f9-bfdc-6105ce3bfd09",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Ndandali"
-          }
-        ],
-        "name": [
-          {
-            "family": "Maphisa",
-            "given": [
-              "Shaka"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1982-04-06",
-        "address": [
-          {
-            "text": "5515 Sizani Highway"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/cf43230b-b9ee-46f9-bfdc-6105ce3bfd09"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:2b0e395b-cfb4-40d1-ab73-35efa27bb8c7",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "2b0e395b-cfb4-40d1-ab73-35efa27bb8c7",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/cf43230b-b9ee-46f9-bfdc-6105ce3bfd09"
-        },
-        "valueQuantity": {
-          "value": 66.2,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/2b0e395b-cfb4-40d1-ab73-35efa27bb8c7"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:7e13e4fc-f33f-4e74-b52b-bf6ed794450b",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "7e13e4fc-f33f-4e74-b52b-bf6ed794450b",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/cf43230b-b9ee-46f9-bfdc-6105ce3bfd09"
-        },
-        "valueQuantity": {
-          "value": 191,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/7e13e4fc-f33f-4e74-b52b-bf6ed794450b"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:8bb9aef6-a1a3-42a6-bbf7-7731e135b638",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "8bb9aef6-a1a3-42a6-bbf7-7731e135b638",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/cf43230b-b9ee-46f9-bfdc-6105ce3bfd09"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 73,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 54,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/8bb9aef6-a1a3-42a6-bbf7-7731e135b638"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:3e09a5cf-2d83-4f47-9c4a-868657005f65",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "3e09a5cf-2d83-4f47-9c4a-868657005f65",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "chagga"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Mthethwa"
-          }
-        ],
-        "name": [
-          {
-            "family": "Mbuso",
-            "given": [
-              "Sifiso"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1999-04-04",
-        "address": [
-          {
-            "text": "655 Dhlomo Row"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/3e09a5cf-2d83-4f47-9c4a-868657005f65"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:af2209d5-7b2a-4ac0-9978-de5274e4ef93",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "af2209d5-7b2a-4ac0-9978-de5274e4ef93",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/3e09a5cf-2d83-4f47-9c4a-868657005f65"
-        },
-        "valueQuantity": {
-          "value": 66.3,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/af2209d5-7b2a-4ac0-9978-de5274e4ef93"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:c74ac41c-91e4-40b3-984a-ea535b41743b",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "c74ac41c-91e4-40b3-984a-ea535b41743b",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/3e09a5cf-2d83-4f47-9c4a-868657005f65"
-        },
-        "valueQuantity": {
-          "value": 149,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/c74ac41c-91e4-40b3-984a-ea535b41743b"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:abdd1ef7-a0a3-4264-b82d-81d58f68abb6",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "abdd1ef7-a0a3-4264-b82d-81d58f68abb6",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/3e09a5cf-2d83-4f47-9c4a-868657005f65"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 160,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 108,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/abdd1ef7-a0a3-4264-b82d-81d58f68abb6"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:0a80e75b-2298-4122-ab38-9e1a81551373",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "0a80e75b-2298-4122-ab38-9e1a81551373",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Cebekhulu"
-          }
-        ],
-        "name": [
-          {
-            "family": "Mabizela",
-            "given": [
-              "Musawenkosi"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "2002-08-19",
-        "address": [
-          {
-            "text": "79013 Ntombela Inlet"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/0a80e75b-2298-4122-ab38-9e1a81551373"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:7edb5d2f-d0d9-46e0-974a-9dbddf2a78db",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "7edb5d2f-d0d9-46e0-974a-9dbddf2a78db",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/0a80e75b-2298-4122-ab38-9e1a81551373"
-        },
-        "valueQuantity": {
-          "value": 90,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/7edb5d2f-d0d9-46e0-974a-9dbddf2a78db"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:fe74802e-85f6-4757-a17a-65210841a45a",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "fe74802e-85f6-4757-a17a-65210841a45a",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/0a80e75b-2298-4122-ab38-9e1a81551373"
-        },
-        "valueQuantity": {
-          "value": 165,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/fe74802e-85f6-4757-a17a-65210841a45a"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:4fb34f32-74e3-4203-ab20-654eddd9075f",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "4fb34f32-74e3-4203-ab20-654eddd9075f",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/0a80e75b-2298-4122-ab38-9e1a81551373"
-        },
+        "effectiveDateTime": "2023-11-23T02:47:41.314Z",
         "component": [
           {
             "code": {
@@ -1982,670 +1680,6 @@
               ]
             },
             "valueQuantity": {
-              "value": 101,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/4fb34f32-74e3-4203-ab20-654eddd9075f"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:fd9bbc6d-77b6-4587-b648-8b82a4e56742",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "fd9bbc6d-77b6-4587-b648-8b82a4e56742",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "chagga"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Mthembu"
-          }
-        ],
-        "name": [
-          {
-            "family": "Guliwe",
-            "given": [
-              "Musawenkosi"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "2001-04-16",
-        "address": [
-          {
-            "text": "288 Mpilo Estate"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/fd9bbc6d-77b6-4587-b648-8b82a4e56742"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:19de9826-1312-4089-b252-39fc2d0f0a29",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "19de9826-1312-4089-b252-39fc2d0f0a29",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/fd9bbc6d-77b6-4587-b648-8b82a4e56742"
-        },
-        "valueQuantity": {
-          "value": 89.8,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/19de9826-1312-4089-b252-39fc2d0f0a29"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:8a6b1401-3e4c-42b6-8fd3-31633118adcd",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "8a6b1401-3e4c-42b6-8fd3-31633118adcd",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/fd9bbc6d-77b6-4587-b648-8b82a4e56742"
-        },
-        "valueQuantity": {
-          "value": 167,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/8a6b1401-3e4c-42b6-8fd3-31633118adcd"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:221e75fc-e71d-43d9-9a70-45a805e65c07",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "221e75fc-e71d-43d9-9a70-45a805e65c07",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/fd9bbc6d-77b6-4587-b648-8b82a4e56742"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 91,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 85,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/221e75fc-e71d-43d9-9a70-45a805e65c07"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:719559bb-1146-4ff4-ac9a-868c7ff273f2",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "719559bb-1146-4ff4-ac9a-868c7ff273f2",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Wosiyane"
-          }
-        ],
-        "name": [
-          {
-            "family": "Kunene",
-            "given": [
-              "Sithembiso"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "2000-01-02",
-        "address": [
-          {
-            "text": "11566 Moseley Groves"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/719559bb-1146-4ff4-ac9a-868c7ff273f2"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:59b7f39d-9ae3-4a0a-a6ac-99874773ea19",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "59b7f39d-9ae3-4a0a-a6ac-99874773ea19",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/719559bb-1146-4ff4-ac9a-868c7ff273f2"
-        },
-        "valueQuantity": {
-          "value": 78.6,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/59b7f39d-9ae3-4a0a-a6ac-99874773ea19"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:f95b4fee-6f0a-45ee-8180-2b4400898788",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "f95b4fee-6f0a-45ee-8180-2b4400898788",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/719559bb-1146-4ff4-ac9a-868c7ff273f2"
-        },
-        "valueQuantity": {
-          "value": 187,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/f95b4fee-6f0a-45ee-8180-2b4400898788"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:8c79ef61-b80b-493f-b9ec-f6c0c3b636be",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "8c79ef61-b80b-493f-b9ec-f6c0c3b636be",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/719559bb-1146-4ff4-ac9a-868c7ff273f2"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 140,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 33,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/8c79ef61-b80b-493f-b9ec-f6c0c3b636be"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:9935a92c-27a9-4c63-889f-4691aa9f9715",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "9935a92c-27a9-4c63-889f-4691aa9f9715",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Siyaya"
-          }
-        ],
-        "name": [
-          {
-            "family": "Gwacela",
-            "given": [
-              "Sfiso"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1974-11-04",
-        "address": [
-          {
-            "text": "537 Zungu Orchard"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/9935a92c-27a9-4c63-889f-4691aa9f9715"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:74e33fff-4f38-4e5d-ae5a-c5738c2e3e4f",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "74e33fff-4f38-4e5d-ae5a-c5738c2e3e4f",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/9935a92c-27a9-4c63-889f-4691aa9f9715"
-        },
-        "valueQuantity": {
-          "value": 84.8,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/74e33fff-4f38-4e5d-ae5a-c5738c2e3e4f"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:9362a502-13dd-4bae-8f5c-7a4f4d01a892",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "9362a502-13dd-4bae-8f5c-7a4f4d01a892",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/9935a92c-27a9-4c63-889f-4691aa9f9715"
-        },
-        "valueQuantity": {
-          "value": 153,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/9362a502-13dd-4bae-8f5c-7a4f4d01a892"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:d18ec0f8-9021-49d0-bfd3-21aac248dc41",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "d18ec0f8-9021-49d0-bfd3-21aac248dc41",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/9935a92c-27a9-4c63-889f-4691aa9f9715"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 52,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 34,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/d18ec0f8-9021-49d0-bfd3-21aac248dc41"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:90e79d87-6476-4379-a23a-8e2602fd5054",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "90e79d87-6476-4379-a23a-8e2602fd5054",
-        "extension": [
-          {
-            "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Buthelezi"
-          }
-        ],
-        "name": [
-          {
-            "family": "Gwacela",
-            "given": [
-              "Vusumuzi"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1971-09-20",
-        "address": [
-          {
-            "text": "73871 Fuze Square"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/90e79d87-6476-4379-a23a-8e2602fd5054"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:9bbb2936-e28b-4508-a2c5-7856e6d151ee",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "9bbb2936-e28b-4508-a2c5-7856e6d151ee",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZWeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/90e79d87-6476-4379-a23a-8e2602fd5054"
-        },
-        "valueQuantity": {
-          "value": 60.3,
-          "unit": "kilograms",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/9bbb2936-e28b-4508-a2c5-7856e6d151ee"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:8d1107fe-82ce-46e6-91de-f4adc3489141",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "8d1107fe-82ce-46e6-91de-f4adc3489141",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZHeight"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/90e79d87-6476-4379-a23a-8e2602fd5054"
-        },
-        "valueQuantity": {
-          "value": 202,
-          "unit": "centimeters",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/8d1107fe-82ce-46e6-91de-f4adc3489141"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:fd8d8f72-f1f4-4436-85cf-54c53de101e0",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "fd8d8f72-f1f4-4436-85cf-54c53de101e0",
-        "meta": {
-          "profile": [
-            "http://example.org/StructureDefinition/TZBloodPressure"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/90e79d87-6476-4379-a23a-8e2602fd5054"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 178,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mmHg"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4"
-                }
-              ]
-            },
-            "valueQuantity": {
               "value": 111,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
@@ -2656,50 +1690,50 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/fd8d8f72-f1f4-4436-85cf-54c53de101e0"
+        "url": "Observation/a2300a52-358e-4fe1-ad79-1c7f2e32a9e9"
       }
     },
     {
-      "fullUrl": "urn:uuid:9f3e5922-c589-4b0f-a196-af0d44dc859f",
+      "fullUrl": "urn:uuid:fec01018-9d48-4620-b6d8-e554b326b0a3",
       "resource": {
         "resourceType": "Patient",
-        "id": "9f3e5922-c589-4b0f-a196-af0d44dc859f",
+        "id": "fec01018-9d48-4620-b6d8-e554b326b0a3",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "chagga"
+            "valueCode": "malila"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Lembede"
+            "valueString": "Fuze"
           }
         ],
         "name": [
           {
-            "family": "Khumalo",
+            "family": "Nondlela",
             "given": [
-              "Nozipho"
+              "Amahle"
             ]
           }
         ],
         "gender": "female",
-        "birthDate": "1979-04-12",
+        "birthDate": "1971-01-05",
         "address": [
           {
-            "text": "111 Nomvula Well"
+            "text": "28353 Nonyana Centers"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/9f3e5922-c589-4b0f-a196-af0d44dc859f"
+        "url": "Patient/fec01018-9d48-4620-b6d8-e554b326b0a3"
       }
     },
     {
-      "fullUrl": "urn:uuid:bdb15a77-8335-42f8-8117-3666dd4c7afa",
+      "fullUrl": "urn:uuid:e34fccb3-875d-498f-9b98-cdd7a9bf5784",
       "resource": {
         "resourceType": "Observation",
-        "id": "bdb15a77-8335-42f8-8117-3666dd4c7afa",
+        "id": "e34fccb3-875d-498f-9b98-cdd7a9bf5784",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -2715,10 +1749,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/9f3e5922-c589-4b0f-a196-af0d44dc859f"
+          "reference": "Patient/fec01018-9d48-4620-b6d8-e554b326b0a3"
         },
+        "effectiveDateTime": "2024-04-11T17:35:49.801Z",
         "valueQuantity": {
-          "value": 88.7,
+          "value": 63.4,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -2726,14 +1761,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/bdb15a77-8335-42f8-8117-3666dd4c7afa"
+        "url": "Observation/e34fccb3-875d-498f-9b98-cdd7a9bf5784"
       }
     },
     {
-      "fullUrl": "urn:uuid:b88aae9f-4022-4eb6-9b7d-58e2affc0ad3",
+      "fullUrl": "urn:uuid:43deda87-19f1-4beb-9b0a-90b5931b02fd",
       "resource": {
         "resourceType": "Observation",
-        "id": "b88aae9f-4022-4eb6-9b7d-58e2affc0ad3",
+        "id": "43deda87-19f1-4beb-9b0a-90b5931b02fd",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -2749,10 +1784,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/9f3e5922-c589-4b0f-a196-af0d44dc859f"
+          "reference": "Patient/fec01018-9d48-4620-b6d8-e554b326b0a3"
         },
+        "effectiveDateTime": "2024-04-11T17:35:49.801Z",
         "valueQuantity": {
-          "value": 159,
+          "value": 176,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -2760,14 +1796,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/b88aae9f-4022-4eb6-9b7d-58e2affc0ad3"
+        "url": "Observation/43deda87-19f1-4beb-9b0a-90b5931b02fd"
       }
     },
     {
-      "fullUrl": "urn:uuid:5435b224-8c7b-44f9-8e12-d974df75bd39",
+      "fullUrl": "urn:uuid:92e0a052-929f-4004-8e5d-a059eb70314c",
       "resource": {
         "resourceType": "Observation",
-        "id": "5435b224-8c7b-44f9-8e12-d974df75bd39",
+        "id": "92e0a052-929f-4004-8e5d-a059eb70314c",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -2783,8 +1819,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/9f3e5922-c589-4b0f-a196-af0d44dc859f"
+          "reference": "Patient/fec01018-9d48-4620-b6d8-e554b326b0a3"
         },
+        "effectiveDateTime": "2024-04-11T17:35:49.801Z",
         "component": [
           {
             "code": {
@@ -2796,7 +1833,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 113,
+              "value": 66,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -2812,7 +1849,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 42,
+              "value": 86,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -2822,50 +1859,50 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/5435b224-8c7b-44f9-8e12-d974df75bd39"
+        "url": "Observation/92e0a052-929f-4004-8e5d-a059eb70314c"
       }
     },
     {
-      "fullUrl": "urn:uuid:bde059b2-7774-4526-b71b-d4167d63f098",
+      "fullUrl": "urn:uuid:c77e4957-d18a-4f17-9c63-c7cd30eac55c",
       "resource": {
         "resourceType": "Patient",
-        "id": "bde059b2-7774-4526-b71b-d4167d63f098",
+        "id": "c77e4957-d18a-4f17-9c63-c7cd30eac55c",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
+            "valueCode": "iraqw"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Nomvethe"
+            "valueString": "Tshabalala"
           }
         ],
         "name": [
           {
-            "family": "Mfumu",
+            "family": "Thusi",
             "given": [
-              "Mthunzi"
+              "Kagiso"
             ]
           }
         ],
-        "gender": "female",
-        "birthDate": "2000-05-30",
+        "gender": "male",
+        "birthDate": "1987-05-03",
         "address": [
           {
-            "text": "397 Sipho Pike"
+            "text": "97943 Ntanzi Pike"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/bde059b2-7774-4526-b71b-d4167d63f098"
+        "url": "Patient/c77e4957-d18a-4f17-9c63-c7cd30eac55c"
       }
     },
     {
-      "fullUrl": "urn:uuid:89fc1bda-2843-4b7a-9dd2-1143096f5ddd",
+      "fullUrl": "urn:uuid:c05dbd84-e9a9-4b75-93fd-1bdc52d68a32",
       "resource": {
         "resourceType": "Observation",
-        "id": "89fc1bda-2843-4b7a-9dd2-1143096f5ddd",
+        "id": "c05dbd84-e9a9-4b75-93fd-1bdc52d68a32",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -2881,10 +1918,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/bde059b2-7774-4526-b71b-d4167d63f098"
+          "reference": "Patient/c77e4957-d18a-4f17-9c63-c7cd30eac55c"
         },
+        "effectiveDateTime": "2023-06-18T18:41:11.882Z",
         "valueQuantity": {
-          "value": 79.9,
+          "value": 103.4,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -2892,14 +1930,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/89fc1bda-2843-4b7a-9dd2-1143096f5ddd"
+        "url": "Observation/c05dbd84-e9a9-4b75-93fd-1bdc52d68a32"
       }
     },
     {
-      "fullUrl": "urn:uuid:1a1fe037-d21e-44ab-bb4b-cafa280f1ab6",
+      "fullUrl": "urn:uuid:569f563c-89a2-4f51-bbca-beee171b8d2f",
       "resource": {
         "resourceType": "Observation",
-        "id": "1a1fe037-d21e-44ab-bb4b-cafa280f1ab6",
+        "id": "569f563c-89a2-4f51-bbca-beee171b8d2f",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -2915,10 +1953,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/bde059b2-7774-4526-b71b-d4167d63f098"
+          "reference": "Patient/c77e4957-d18a-4f17-9c63-c7cd30eac55c"
         },
+        "effectiveDateTime": "2023-06-18T18:41:11.882Z",
         "valueQuantity": {
-          "value": 185,
+          "value": 180,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -2926,14 +1965,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/1a1fe037-d21e-44ab-bb4b-cafa280f1ab6"
+        "url": "Observation/569f563c-89a2-4f51-bbca-beee171b8d2f"
       }
     },
     {
-      "fullUrl": "urn:uuid:98673cbb-0d07-49b9-9770-d740ae3c268f",
+      "fullUrl": "urn:uuid:d4fdd720-23ed-4fd3-807c-5d4c584c6f3f",
       "resource": {
         "resourceType": "Observation",
-        "id": "98673cbb-0d07-49b9-9770-d740ae3c268f",
+        "id": "d4fdd720-23ed-4fd3-807c-5d4c584c6f3f",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -2949,8 +1988,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/bde059b2-7774-4526-b71b-d4167d63f098"
+          "reference": "Patient/c77e4957-d18a-4f17-9c63-c7cd30eac55c"
         },
+        "effectiveDateTime": "2023-06-18T18:41:11.882Z",
         "component": [
           {
             "code": {
@@ -2962,7 +2002,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 116,
+              "value": 163,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -2978,7 +2018,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 77,
+              "value": 68,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -2988,50 +2028,50 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/98673cbb-0d07-49b9-9770-d740ae3c268f"
+        "url": "Observation/d4fdd720-23ed-4fd3-807c-5d4c584c6f3f"
       }
     },
     {
-      "fullUrl": "urn:uuid:04af5dd7-38bd-4155-8284-9001ca3f46c5",
+      "fullUrl": "urn:uuid:27df06ae-19cf-4fd7-91b8-4c877396c797",
       "resource": {
         "resourceType": "Patient",
-        "id": "04af5dd7-38bd-4155-8284-9001ca3f46c5",
+        "id": "27df06ae-19cf-4fd7-91b8-4c877396c797",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
+            "valueCode": "nyamwezi"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-            "valueString": "Mthethwa"
+            "valueString": "Magoza"
           }
         ],
         "name": [
           {
-            "family": "Dlamini",
+            "family": "Mashinini",
             "given": [
-              "Zobuhle"
+              "Bhekumbuso"
             ]
           }
         ],
-        "gender": "female",
-        "birthDate": "1955-08-13",
+        "gender": "male",
+        "birthDate": "1995-05-21",
         "address": [
           {
-            "text": "754 Cebekhulu Key"
+            "text": "69844 Zenzele Track"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/04af5dd7-38bd-4155-8284-9001ca3f46c5"
+        "url": "Patient/27df06ae-19cf-4fd7-91b8-4c877396c797"
       }
     },
     {
-      "fullUrl": "urn:uuid:5a398619-b0d3-41ae-98cd-41a71a18aecb",
+      "fullUrl": "urn:uuid:8f04fbea-7c09-4037-bd7b-cb96f18881df",
       "resource": {
         "resourceType": "Observation",
-        "id": "5a398619-b0d3-41ae-98cd-41a71a18aecb",
+        "id": "8f04fbea-7c09-4037-bd7b-cb96f18881df",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -3047,10 +2087,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/04af5dd7-38bd-4155-8284-9001ca3f46c5"
+          "reference": "Patient/27df06ae-19cf-4fd7-91b8-4c877396c797"
         },
+        "effectiveDateTime": "2023-10-17T14:47:09.875Z",
         "valueQuantity": {
-          "value": 61.7,
+          "value": 58.9,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -3058,14 +2099,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/5a398619-b0d3-41ae-98cd-41a71a18aecb"
+        "url": "Observation/8f04fbea-7c09-4037-bd7b-cb96f18881df"
       }
     },
     {
-      "fullUrl": "urn:uuid:93b94e58-6d5e-476d-9065-c3d7c58767e8",
+      "fullUrl": "urn:uuid:d058cb3c-92cc-4e36-9386-84919eb595e9",
       "resource": {
         "resourceType": "Observation",
-        "id": "93b94e58-6d5e-476d-9065-c3d7c58767e8",
+        "id": "d058cb3c-92cc-4e36-9386-84919eb595e9",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -3081,10 +2122,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/04af5dd7-38bd-4155-8284-9001ca3f46c5"
+          "reference": "Patient/27df06ae-19cf-4fd7-91b8-4c877396c797"
         },
+        "effectiveDateTime": "2023-10-17T14:47:09.875Z",
         "valueQuantity": {
-          "value": 177,
+          "value": 174,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -3092,14 +2134,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/93b94e58-6d5e-476d-9065-c3d7c58767e8"
+        "url": "Observation/d058cb3c-92cc-4e36-9386-84919eb595e9"
       }
     },
     {
-      "fullUrl": "urn:uuid:8c2d3e0f-6e5f-4732-aa63-f8f531be631a",
+      "fullUrl": "urn:uuid:8402217b-e9c7-4f9f-8ea6-26de6afa018a",
       "resource": {
         "resourceType": "Observation",
-        "id": "8c2d3e0f-6e5f-4732-aa63-f8f531be631a",
+        "id": "8402217b-e9c7-4f9f-8ea6-26de6afa018a",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -3115,8 +2157,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/04af5dd7-38bd-4155-8284-9001ca3f46c5"
+          "reference": "Patient/27df06ae-19cf-4fd7-91b8-4c877396c797"
         },
+        "effectiveDateTime": "2023-10-17T14:47:09.875Z",
         "component": [
           {
             "code": {
@@ -3128,7 +2171,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 74,
+              "value": 112,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -3144,7 +2187,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 115,
+              "value": 50,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -3154,18 +2197,18 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/8c2d3e0f-6e5f-4732-aa63-f8f531be631a"
+        "url": "Observation/8402217b-e9c7-4f9f-8ea6-26de6afa018a"
       }
     },
     {
-      "fullUrl": "urn:uuid:e642d5f8-ee4e-4aa9-ab95-551f9b50ee52",
+      "fullUrl": "urn:uuid:23c829e5-393b-4d78-bed1-749128d9049e",
       "resource": {
         "resourceType": "Patient",
-        "id": "e642d5f8-ee4e-4aa9-ab95-551f9b50ee52",
+        "id": "23c829e5-393b-4d78-bed1-749128d9049e",
         "extension": [
           {
             "url": "http://example.org/StructureDefinition/tribe",
-            "valueCode": "sukuma"
+            "valueCode": "kara"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
@@ -3174,30 +2217,30 @@
         ],
         "name": [
           {
-            "family": "Ngcolosi",
+            "family": "Zuma",
             "given": [
-              "Sizakele"
+              "Thadie"
             ]
           }
         ],
         "gender": "female",
-        "birthDate": "1966-10-04",
+        "birthDate": "1961-11-13",
         "address": [
           {
-            "text": "2311 Ngema Corner"
+            "text": "52054 Zungu Drives"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/e642d5f8-ee4e-4aa9-ab95-551f9b50ee52"
+        "url": "Patient/23c829e5-393b-4d78-bed1-749128d9049e"
       }
     },
     {
-      "fullUrl": "urn:uuid:5658d8e0-3e0e-429b-b9d3-e837319e04d7",
+      "fullUrl": "urn:uuid:6cb7b561-6a44-406a-a03d-1cebe5b76690",
       "resource": {
         "resourceType": "Observation",
-        "id": "5658d8e0-3e0e-429b-b9d3-e837319e04d7",
+        "id": "6cb7b561-6a44-406a-a03d-1cebe5b76690",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZWeight"
@@ -3213,10 +2256,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/e642d5f8-ee4e-4aa9-ab95-551f9b50ee52"
+          "reference": "Patient/23c829e5-393b-4d78-bed1-749128d9049e"
         },
+        "effectiveDateTime": "2023-10-18T15:37:15.290Z",
         "valueQuantity": {
-          "value": 67.7,
+          "value": 113.4,
           "unit": "kilograms",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -3224,14 +2268,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/5658d8e0-3e0e-429b-b9d3-e837319e04d7"
+        "url": "Observation/6cb7b561-6a44-406a-a03d-1cebe5b76690"
       }
     },
     {
-      "fullUrl": "urn:uuid:f58cd14b-a0c6-4147-bbb5-073ab7ab5cb0",
+      "fullUrl": "urn:uuid:24877404-6be2-47e6-9d4e-f44d34ab81a3",
       "resource": {
         "resourceType": "Observation",
-        "id": "f58cd14b-a0c6-4147-bbb5-073ab7ab5cb0",
+        "id": "24877404-6be2-47e6-9d4e-f44d34ab81a3",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZHeight"
@@ -3247,10 +2291,11 @@
           ]
         },
         "subject": {
-          "reference": "Patient/e642d5f8-ee4e-4aa9-ab95-551f9b50ee52"
+          "reference": "Patient/23c829e5-393b-4d78-bed1-749128d9049e"
         },
+        "effectiveDateTime": "2023-10-18T15:37:15.290Z",
         "valueQuantity": {
-          "value": 157,
+          "value": 187,
           "unit": "centimeters",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -3258,14 +2303,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/f58cd14b-a0c6-4147-bbb5-073ab7ab5cb0"
+        "url": "Observation/24877404-6be2-47e6-9d4e-f44d34ab81a3"
       }
     },
     {
-      "fullUrl": "urn:uuid:00d9fe17-8c0f-4604-ab81-1e3a00dfb279",
+      "fullUrl": "urn:uuid:d89b47c4-e413-4122-aa6c-2b53dcae4302",
       "resource": {
         "resourceType": "Observation",
-        "id": "00d9fe17-8c0f-4604-ab81-1e3a00dfb279",
+        "id": "d89b47c4-e413-4122-aa6c-2b53dcae4302",
         "meta": {
           "profile": [
             "http://example.org/StructureDefinition/TZBloodPressure"
@@ -3281,8 +2326,9 @@
           ]
         },
         "subject": {
-          "reference": "Patient/e642d5f8-ee4e-4aa9-ab95-551f9b50ee52"
+          "reference": "Patient/23c829e5-393b-4d78-bed1-749128d9049e"
         },
+        "effectiveDateTime": "2023-10-18T15:37:15.290Z",
         "component": [
           {
             "code": {
@@ -3294,7 +2340,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 177,
+              "value": 145,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -3310,7 +2356,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 102,
+              "value": 44,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mmHg"
@@ -3320,7 +2366,1021 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/00d9fe17-8c0f-4604-ab81-1e3a00dfb279"
+        "url": "Observation/d89b47c4-e413-4122-aa6c-2b53dcae4302"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:61234533-a17e-4c01-b766-4b32aecb6c84",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "61234533-a17e-4c01-b766-4b32aecb6c84",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "ikizu"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Mthethwa"
+          }
+        ],
+        "name": [
+          {
+            "family": "Ncusi",
+            "given": [
+              "Thulisile"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1947-07-23",
+        "address": [
+          {
+            "text": "92019 Mavundla Streets"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/61234533-a17e-4c01-b766-4b32aecb6c84"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cc1208c5-f260-44b6-98d5-9f215140f6dd",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc1208c5-f260-44b6-98d5-9f215140f6dd",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/61234533-a17e-4c01-b766-4b32aecb6c84"
+        },
+        "effectiveDateTime": "2024-01-05T22:21:12.767Z",
+        "valueQuantity": {
+          "value": 100.5,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc1208c5-f260-44b6-98d5-9f215140f6dd"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f9e22689-47d5-4411-8a37-17dbd1c30015",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f9e22689-47d5-4411-8a37-17dbd1c30015",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/61234533-a17e-4c01-b766-4b32aecb6c84"
+        },
+        "effectiveDateTime": "2024-01-05T22:21:12.767Z",
+        "valueQuantity": {
+          "value": 203,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/f9e22689-47d5-4411-8a37-17dbd1c30015"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d1836d39-b15c-4351-b1b0-f717478be74d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d1836d39-b15c-4351-b1b0-f717478be74d",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/61234533-a17e-4c01-b766-4b32aecb6c84"
+        },
+        "effectiveDateTime": "2024-01-05T22:21:12.767Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 162,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 95,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/d1836d39-b15c-4351-b1b0-f717478be74d"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e02e8b8e-9588-4162-867f-e77d92df31f1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "e02e8b8e-9588-4162-867f-e77d92df31f1",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "bondei"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Ngema"
+          }
+        ],
+        "name": [
+          {
+            "family": "Nsele",
+            "given": [
+              "Anele"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1974-04-04",
+        "address": [
+          {
+            "text": "846 Sizani Glens"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/e02e8b8e-9588-4162-867f-e77d92df31f1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a86b3c49-f38a-4175-a76c-18f0b121f467",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a86b3c49-f38a-4175-a76c-18f0b121f467",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/e02e8b8e-9588-4162-867f-e77d92df31f1"
+        },
+        "effectiveDateTime": "2023-12-03T20:01:12.762Z",
+        "valueQuantity": {
+          "value": 100.4,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/a86b3c49-f38a-4175-a76c-18f0b121f467"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d43b2f3a-70b1-40d4-a2ec-1b23cc8bbaa5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d43b2f3a-70b1-40d4-a2ec-1b23cc8bbaa5",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/e02e8b8e-9588-4162-867f-e77d92df31f1"
+        },
+        "effectiveDateTime": "2023-12-03T20:01:12.762Z",
+        "valueQuantity": {
+          "value": 174,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/d43b2f3a-70b1-40d4-a2ec-1b23cc8bbaa5"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:66df9066-4a06-4f19-a8de-f47868e40519",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "66df9066-4a06-4f19-a8de-f47868e40519",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/e02e8b8e-9588-4162-867f-e77d92df31f1"
+        },
+        "effectiveDateTime": "2023-12-03T20:01:12.762Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 98,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 44,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/66df9066-4a06-4f19-a8de-f47868e40519"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8bdf700-0fbb-4788-9012-fb0104acbae9",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a8bdf700-0fbb-4788-9012-fb0104acbae9",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "kerewe"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Maduma"
+          }
+        ],
+        "name": [
+          {
+            "family": "Shezi",
+            "given": [
+              "Sanele"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2004-08-26",
+        "address": [
+          {
+            "text": "2870 Nonhlanhla Lock"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/a8bdf700-0fbb-4788-9012-fb0104acbae9"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:467b23f2-4f2d-4a45-8774-f7acc68f4685",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "467b23f2-4f2d-4a45-8774-f7acc68f4685",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a8bdf700-0fbb-4788-9012-fb0104acbae9"
+        },
+        "effectiveDateTime": "2023-08-30T19:20:59.772Z",
+        "valueQuantity": {
+          "value": 57.5,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/467b23f2-4f2d-4a45-8774-f7acc68f4685"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f62419e6-1135-49e6-8477-61c45cdbebe5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f62419e6-1135-49e6-8477-61c45cdbebe5",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a8bdf700-0fbb-4788-9012-fb0104acbae9"
+        },
+        "effectiveDateTime": "2023-08-30T19:20:59.772Z",
+        "valueQuantity": {
+          "value": 175,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/f62419e6-1135-49e6-8477-61c45cdbebe5"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ad8eb5d3-70cf-4c47-991d-e7f5d51391f6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ad8eb5d3-70cf-4c47-991d-e7f5d51391f6",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a8bdf700-0fbb-4788-9012-fb0104acbae9"
+        },
+        "effectiveDateTime": "2023-08-30T19:20:59.772Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 94,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 88,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ad8eb5d3-70cf-4c47-991d-e7f5d51391f6"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f3df76d9-132f-4ac6-9128-700099f1fe0c",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "f3df76d9-132f-4ac6-9128-700099f1fe0c",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "bondei"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Nonyana"
+          }
+        ],
+        "name": [
+          {
+            "family": "Khawula",
+            "given": [
+              "Nokuthula"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1966-04-01",
+        "address": [
+          {
+            "text": "904 Nhleko Stream"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/f3df76d9-132f-4ac6-9128-700099f1fe0c"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:63098b72-b9ce-4a33-9d73-eda6f3a5bb2f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "63098b72-b9ce-4a33-9d73-eda6f3a5bb2f",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f3df76d9-132f-4ac6-9128-700099f1fe0c"
+        },
+        "effectiveDateTime": "2023-07-05T07:23:46.150Z",
+        "valueQuantity": {
+          "value": 74.8,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/63098b72-b9ce-4a33-9d73-eda6f3a5bb2f"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:83da81e3-ecae-438f-9468-05d5ed32baa0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "83da81e3-ecae-438f-9468-05d5ed32baa0",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f3df76d9-132f-4ac6-9128-700099f1fe0c"
+        },
+        "effectiveDateTime": "2023-07-05T07:23:46.150Z",
+        "valueQuantity": {
+          "value": 202,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/83da81e3-ecae-438f-9468-05d5ed32baa0"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a05d8914-2c64-4511-bc3e-7310a0e5fa2c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a05d8914-2c64-4511-bc3e-7310a0e5fa2c",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f3df76d9-132f-4ac6-9128-700099f1fe0c"
+        },
+        "effectiveDateTime": "2023-07-05T07:23:46.150Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 58,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 72,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/a05d8914-2c64-4511-bc3e-7310a0e5fa2c"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4fdb3cf6-cb89-49b9-b231-509502c632d8",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4fdb3cf6-cb89-49b9-b231-509502c632d8",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "kwadza"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Musi"
+          }
+        ],
+        "name": [
+          {
+            "family": "Nyanda",
+            "given": [
+              "Nkanyezi"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1973-09-18",
+        "address": [
+          {
+            "text": "7282 Radebe Manor"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/4fdb3cf6-cb89-49b9-b231-509502c632d8"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:24bac3b0-832d-49bc-b546-f3b2142bc4ad",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "24bac3b0-832d-49bc-b546-f3b2142bc4ad",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4fdb3cf6-cb89-49b9-b231-509502c632d8"
+        },
+        "effectiveDateTime": "2024-04-05T22:46:19.668Z",
+        "valueQuantity": {
+          "value": 120.3,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/24bac3b0-832d-49bc-b546-f3b2142bc4ad"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0c71b362-a941-4c5e-aabf-7e30a4e21af1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0c71b362-a941-4c5e-aabf-7e30a4e21af1",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4fdb3cf6-cb89-49b9-b231-509502c632d8"
+        },
+        "effectiveDateTime": "2024-04-05T22:46:19.668Z",
+        "valueQuantity": {
+          "value": 152,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0c71b362-a941-4c5e-aabf-7e30a4e21af1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:473aa528-8a73-4ccb-8300-f45972c8e884",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "473aa528-8a73-4ccb-8300-f45972c8e884",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4fdb3cf6-cb89-49b9-b231-509502c632d8"
+        },
+        "effectiveDateTime": "2024-04-05T22:46:19.668Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 165,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 87,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/473aa528-8a73-4ccb-8300-f45972c8e884"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:931fec55-2ba8-45ce-b746-9ea94c3d0ffc",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "931fec55-2ba8-45ce-b746-9ea94c3d0ffc",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "mbunga"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Mavundla"
+          }
+        ],
+        "name": [
+          {
+            "family": "Mgenge",
+            "given": [
+              "Thando"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1990-03-30",
+        "address": [
+          {
+            "text": "755 Mthembu Rapids"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/931fec55-2ba8-45ce-b746-9ea94c3d0ffc"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:46e7319e-8b58-4937-bc66-954015d8905b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "46e7319e-8b58-4937-bc66-954015d8905b",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZWeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/931fec55-2ba8-45ce-b746-9ea94c3d0ffc"
+        },
+        "effectiveDateTime": "2023-11-26T22:53:18.185Z",
+        "valueQuantity": {
+          "value": 136.7,
+          "unit": "kilograms",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/46e7319e-8b58-4937-bc66-954015d8905b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:77cef3c3-0579-4556-88dc-2e41d27635e0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "77cef3c3-0579-4556-88dc-2e41d27635e0",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZHeight"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/931fec55-2ba8-45ce-b746-9ea94c3d0ffc"
+        },
+        "effectiveDateTime": "2023-11-26T22:53:18.185Z",
+        "valueQuantity": {
+          "value": 176,
+          "unit": "centimeters",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/77cef3c3-0579-4556-88dc-2e41d27635e0"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d7b842b3-f33f-4c8d-9888-0b0b567db223",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d7b842b3-f33f-4c8d-9888-0b0b567db223",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/TZBloodPressure"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/931fec55-2ba8-45ce-b746-9ea94c3d0ffc"
+        },
+        "effectiveDateTime": "2023-11-26T22:53:18.185Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 50,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 114,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmHg"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/d7b842b3-f33f-4c8d-9888-0b0b567db223"
       }
     }
   ]
