@@ -32,38 +32,38 @@ for (let i = 0; i < 20; i++) {
   // Generate a random date of birth between 1950 and 2000
 
   const gender = faker.person.sex()
-    const pid = faker.string.uuid()
-    const wid = faker.string.uuid()
-    const hid = faker.string.uuid()
-    const bpid = faker.string.uuid()
+  const pid = faker.string.uuid()
+  const wid = faker.string.uuid()
+  const hid = faker.string.uuid()
+  const bpid = faker.string.uuid()
   const effective = faker.date.recent( { days: 365 } )
-    const patient = {
-        resourceType: "Patient",
-        id: pid,
-        extension : [{
-          url : "http://example.org/StructureDefinition/tribe",
-          valueCode : tribes[(Math.floor(Math.random() * tribes.length))]
-        },
-	  {
-	    url: "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-	    valueString: faker.person.lastName()
-	  }
-	],
-        name: [
-            {
-                family: faker.person.lastName(),
-                given: [faker.person.firstName(gender)]
-            }
-        ],
-        gender: gender,
-        birthDate: faker.date.birthdate().toISOString().substring(0, 10),
-        address: [
-            {
-                text: faker.location.streetAddress()
-            }
-        ]
-    };
-    patients.push({ fullUrl: "urn:uuid:"+pid, resource: patient, request: { method: "PUT", url: "Patient/"+pid } });
+  const patient = {
+    resourceType: "Patient",
+    id: pid,
+    extension : [{
+      url : "http://example.org/StructureDefinition/tribe",
+      valueCode : tribes[(Math.floor(Math.random() * tribes.length))]
+    },
+      {
+	url: "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+	valueString: faker.person.lastName()
+      }
+    ],
+    name: [
+      {
+	family: faker.person.lastName(),
+	given: [faker.person.firstName(gender)]
+      }
+    ],
+    gender: gender,
+    birthDate: faker.date.birthdate().toISOString().substring(0, 10),
+    address: [
+      {
+	text: faker.location.streetAddress()
+      }
+    ]
+  };
+  patients.push({ fullUrl: "urn:uuid:"+pid, resource: patient, request: { method: "PUT", url: "Patient/"+pid } });
 
   const weight =  {
     "resourceType" : "Observation",
@@ -90,8 +90,8 @@ for (let i = 0; i < 20; i++) {
     }
   };
 
-    patients.push({ fullUrl: "urn:uuid:"+wid, resource: weight, request: { method: "PUT", url: "Observation/"+wid } });
-  
+  patients.push({ fullUrl: "urn:uuid:"+wid, resource: weight, request: { method: "PUT", url: "Observation/"+wid } });
+
   const height =  {
     "resourceType" : "Observation",
     "id": hid,
@@ -120,52 +120,52 @@ for (let i = 0; i < 20; i++) {
   patients.push({ fullUrl: "urn:uuid:"+hid, resource: height, request: { method: "PUT", url: "Observation/"+hid } });
 
   const bp = {
-  "resourceType" : "Observation",
+    "resourceType" : "Observation",
     "id": bpid,
-  "meta" : {
-    "profile" : ["http://example.org/StructureDefinition/TZBloodPressure"]
-  },
-  "status" : "final",
-  "code" : {
-    "coding" : [{
-      "system" : "http://loinc.org",
-      "code" : "55284-4"
-    }]
-  },
-  "subject" : {
-    "reference" : "Patient/"+pid,
-  },
-  "effectiveDateTime": effective,
-  "component" : [{
+    "meta" : {
+      "profile" : ["http://example.org/StructureDefinition/TZBloodPressure"]
+    },
+    "status" : "final",
     "code" : {
       "coding" : [{
-        "system" : "http://loinc.org",
-        "code" : "8480-6"
+	"system" : "http://loinc.org",
+	"code" : "55284-4"
       }]
     },
-    "valueQuantity" : {
-      "value" : faker.number.int({min: 50, max: 180}),
-      "unit" : "mmHg",
-      "system" : "http://unitsofmeasure.org",
-      "code" : "mmHg"
-    }
-  },
-  {
-    "code" : {
-      "coding" : [{
-        "system" : "http://loinc.org",
-        "code" : "8462-4"
-      }]
+    "subject" : {
+      "reference" : "Patient/"+pid,
     },
-    "valueQuantity" : {
-      "value" : faker.number.int({min: 33, max: 120}),
-      "unit" : "mmHg",
-      "system" : "http://unitsofmeasure.org",
-      "code" : "mmHg"
-    }
-  }]
-}
- 
+    "effectiveDateTime": effective,
+    "component" : [{
+      "code" : {
+	"coding" : [{
+	  "system" : "http://loinc.org",
+	  "code" : "8480-6"
+	}]
+      },
+      "valueQuantity" : {
+	"value" : faker.number.int({min: 50, max: 180}),
+	"unit" : "mmHg",
+	"system" : "http://unitsofmeasure.org",
+	"code" : "mmHg"
+      }
+    },
+      {
+	"code" : {
+	  "coding" : [{
+	    "system" : "http://loinc.org",
+	    "code" : "8462-4"
+	  }]
+	},
+	"valueQuantity" : {
+	  "value" : faker.number.int({min: 33, max: 120}),
+	  "unit" : "mmHg",
+	  "system" : "http://unitsofmeasure.org",
+	  "code" : "mmHg"
+	}
+      }]
+  }
+
 
   patients.push({ fullUrl: "urn:uuid:"+bpid, resource: bp, request: { method: "PUT", url: "Observation/"+bpid } });
 
@@ -174,10 +174,10 @@ for (let i = 0; i < 20; i++) {
 
 // Create a FHIR bundle
 const bundle = {
-    resourceType: "Bundle",
-    id: faker.string.uuid(),
-    type: "batch",
-    entry: patients
+  resourceType: "Bundle",
+  id: faker.string.uuid(),
+  type: "batch",
+  entry: patients
 };
 
 // Print the bundle as a JSON string

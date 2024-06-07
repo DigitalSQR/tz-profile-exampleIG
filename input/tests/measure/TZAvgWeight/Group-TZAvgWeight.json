@@ -1,0 +1,17 @@
+{
+  "resourceType": "Group",
+  "id": "TZAvgWeight",
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/artifact-testArtifact",
+    "valueCanonical": "http://ecqi.healthit.gov/ecqms/Measure/TZAvgWeight"
+  } ],
+  "active": true,
+  "type": "person",
+  "actual": true,
+  "member": [ {
+    "entity": {
+      "reference": "Patient/10b377a6-dce9-481f-a962-6ed18fbc1bef",
+      "display": "Nonhlanhla Gama"
+    }
+  } ]
+}

@@ -1,0 +1,29 @@
+      {
+        "resourceType": "Patient",
+        "id": "10b377a6-dce9-481f-a962-6ed18fbc1bef",
+        "extension": [
+          {
+            "url": "http://example.org/StructureDefinition/tribe",
+            "valueCode": "nyanyembe"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Dlamini"
+          }
+        ],
+        "name": [
+          {
+            "family": "Gama",
+            "given": [
+              "Nonhlanhla"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1953-10-03",
+        "address": [
+          {
+            "text": "97662 Kunene Village"
+          }
+        ]
+      }
