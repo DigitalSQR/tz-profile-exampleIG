@@ -1,3 +1,5 @@
+# This is a training example, not for real use anywhere.
+
 ## Example FHIR IG
 
 
